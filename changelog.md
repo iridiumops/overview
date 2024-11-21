@@ -10,7 +10,7 @@ Revenant Expansion - EVE 22.02
 + Added new officer NPC frigates and cruisers
 + Added Mercenary Den
 + Added Rift
-* Fixed incosistencies
+* Fixed inconsistencies
 * Cleaned some legacy IDs
 * Various tiny changes thanks to your feedback
 ```
