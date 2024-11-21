@@ -1,0 +1,27 @@
+- - '<color=0xFFFFEE00>✜ Drones: Drones and Fighters (red+neutral)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 21
+    - - groups
+      - - 100 # Combat Drone
+        - 101 # Mining Drone
+        - 544 # Energy Neutralizer Drone
+        - 549 # Fighter Drone
+        - 639 # Electronic Warfare Drone
+        - 640 # Logistic Drone
+        - 641 # Stasis Webifying Drone
+        - 1023 # Fighter Bomber
+        - 1159 # Salvage Drone
+        - 1537 # Support Fighter
+        - 1652 # Light Fighter
+        - 1653 # Heavy Fighter
+        - 1997 # Abyssal Drone Entities
+        - 4777 # Structure Light Fighter
+        - 4778 # Structure Support Fighter
+        - 4779 # Structure Heavy Fighter

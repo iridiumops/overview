@@ -1,0 +1,62 @@
+- - '<color=0xFFFFFFFF>✪ System: Mining</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+    - - groups
+      - - 9 # Asteroid Belt
+        - 335 # Temporary Cloud
+        - 450 # Arkonor
+        - 451 # Bistot
+        - 452 # Crokite
+        - 453 # Dark Ochre
+        - 454 # Hedbergite
+        - 455 # Hemorphite
+        - 456 # Jaspet
+        - 457 # Kernite
+        - 458 # Plagioclase
+        - 459 # Pyroxeres
+        - 460 # Scordite
+        - 461 # Spodumain
+        - 462 # Veldspar
+        - 465 # Ice
+        - 467 # Gneiss
+        - 468 # Mercoxit
+        - 469 # Omber
+        - 549 # Fighter Drone
+        - 711 # Harvestable Cloud
+        - 934 # Zombie Entities
+        - 1004 # Defense Bunkers
+        - 1023 # Fighter Bomber
+        - 1081 # Mercenary Bases
+        - 1082 # Capsuleer Bases
+        - 1884 # Ubiquitous Moon Asteroids
+        - 1911 # Empire Asteroids
+        - 1920 # Common Moon Asteroids
+        - 1921 # Uncommon Moon Asteroids
+        - 1922 # Rare Moon Asteroids
+        - 1923 # Exceptional Moon Asteroids
+        - 2006 # Deadspace Asteroids
+        - 2022 # Temporal Resources
+        - 2024 # Fluorite
+        - 4029 # Talassonite
+        - 4030 # Rakovene
+        - 4031 # Bezdnacine
+        - 4055 # Invisible Beacon
+        - 4094 # Scalable Decorative Asteroid
+        - 4161 # AIR Ore Asteroid Resources
+        - 4168 # Compressed Gas
+        - 4513 # Mordunium
+        - 4514 # Ytirium
+        - 4515 # Eifyrium
+        - 4516 # Ducinium
+        - 4568 # Mutanite
+        - 4755 # Kylixium
+        - 4756 # Nocxite
+        - 4757 # Ueganite
+        - 4758 # Hezorime
+        - 4759 # Griemeer

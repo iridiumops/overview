@@ -1,0 +1,27 @@
+- - '<color=0xFFCCCCCC>❒ Loot: Loot and salvage</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - []
+    - - groups
+      - - 12 # Cargo Container
+        - 186 # Wreck
+        - 306 # Spawn Container
+        - 340 # Secure Cargo Container
+        - 361 # Mobile Warp Disruptor
+        - 448 # Audit Log Secure Container
+        - 494 # Deadspace Overseer's Structure
+        - 496 # Deadspace Overseer's Belongings
+        - 649 # Freight Container
+        - 952 # Mission Container
+        - 1207 # Scatter Container
+        - 1246 # Mobile Depot
+        - 1249 # Mobile Cyno Inhibitor
+        - 1250 # Mobile Tractor Unit
+        - 1273 # Encounter Surveillance System
+        - 1275 # Mobile Scan Inhibitor
+        - 1276 # Mobile Micro Jump Unit
+        - 1928 # Irregular Container
+        - 2009 # Precursor Cache
+        - 4137 # Mobile Analysis Beacon
+        - 4719 # Rift

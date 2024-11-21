@@ -1,0 +1,48 @@
+- - '<color=0xFFFFFFFF>✪ System: System</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - []
+    - - groups
+      - - 6 # Sun
+        - 10 # Stargate
+        - 15 # Station
+        - 310 # Beacon
+        - 318 # Landmark
+        - 335 # Temporary Cloud
+        - 366 # Warp Gate
+        - 549 # Fighter Drone
+        - 897 # Covert Cynosural Field
+        - 925 # FW Infrastructure Hub
+        - 934 # Zombie Entities
+        - 1003 # Territorial Claim Unit
+        - 1004 # Defense Bunkers
+        - 1012 # Sovereignty Hub
+        - 1023 # Fighter Bomber
+        - 1081 # Mercenary Bases
+        - 1082 # Capsuleer Bases
+        - 1316 # Entosis Command Node
+        - 1404 # Engineering Complex
+        - 1406 # Refinery
+        - 1408 # Upwell Jump Gate
+        - 1657 # Citadel
+        - 1704 # Super Weapon Beacon
+        - 1876 # ♦ Engineering Complex
+        - 1924 # ♦ Stronghold
+        - 2015 # Upwell Monument
+        - 2016 # Upwell Cyno Jammer
+        - 2017 # Upwell Cyno Beacon
+        - 2020 # Cynosural Fields
+        - 4033 # Destructible Effect Beacon
+        - 4055 # Invisible Beacon
+        - 4079 # Encounter Surveillance System
+        - 4081 # Disrupted Gate
+        - 4107 # Mobile Observatory
+        - 4137 # Mobile Analysis Beacon
+        - 4477 # FW Propaganda Broadcast Structure
+        - 4499 # FW Listening Outpost
+        - 4547 # Interstellar Shipcaster Beacon
+        - 4548 # Shipcaster Beacon Constructor
+        - 4549 # Interstellar Shipcaster
+        - 4644 # Pirate Forward Operating Base
+        - 4744 # Upwell Moon Drill

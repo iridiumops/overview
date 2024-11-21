@@ -1,0 +1,31 @@
+- - '<color=0xFFFF5500>➔ Warp: Travel (-citadels)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 21
+        - 45
+        - 49
+    - - groups
+      - - 10 # Stargate
+        - 15 # Station
+        - 318 # Landmark
+        - 365 # Control Tower
+        - 366 # Warp Gate
+        - 411 # Force Field
+        - 416 # Moon Mining
+        - 707 # Jump Portal Array
+        - 897 # Covert Cynosural Field
+        - 988 # Wormhole
+        - 1408 # Upwell Jump Gate
+        - 1915 # Moon Mining Beacon
+        - 2020 # Cynosural Fields
+        - 4081 # Disrupted Gate
+        - 4547 # Interstellar Shipcaster Beacon
+        - 4548 # Shipcaster Beacon Constructor
+        - 4549 # Interstellar Shipcaster
+        - 4644 # Pirate Forward Operating Base

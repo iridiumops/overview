@@ -1,0 +1,20 @@
+- - '<color=0xFFFF9900>❖ Ships: Enemy Capitals (red+neutral)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 21
+    - - groups
+      - - 30 # Titan
+        - 485 # Dreadnought
+        - 513 # Freighter
+        - 547 # Carrier
+        - 659 # Supercarrier
+        - 883 # Capital Industrial Ship
+        - 902 # Jump Freighter
+        - 1538 # Force Auxiliary
+        - 4594 # Lancer Dreadnought

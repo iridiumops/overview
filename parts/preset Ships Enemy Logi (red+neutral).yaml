@@ -1,0 +1,14 @@
+- - '<color=0xFFFF9900>❖ Ships: Enemy Logi (red+neutral)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 21
+    - - groups
+      - - 832 # Logistics
+        - 1527 # Logistics Frigate
+        - 1538 # Force Auxiliary

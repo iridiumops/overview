@@ -1,0 +1,123 @@
+- - '<color=0xFF88DDEE>✕ Main: <color=0xFFFFFFFF>System</color> & <color=0xFF14B0D2>PVX
+    (-npc)</color></color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 37
+    - - groups
+      - - 6 # Sun
+        - 10 # Stargate
+        - 15 # Station
+        - 25 # Frigate
+        - 26 # Cruiser
+        - 27 # Battleship
+        - 28 # Hauler
+        - 29 # Capsule
+        - 30 # Titan
+        - 31 # Shuttle
+        - 90 # Bomb
+        - 237 # Corvette
+        - 310 # Beacon
+        - 318 # Landmark
+        - 324 # Assault Frigate
+        - 335 # Temporary Cloud
+        - 336 # Mobile Sentry Gun
+        - 358 # Heavy Assault Cruiser
+        - 361 # Mobile Warp Disruptor
+        - 365 # Control Tower
+        - 366 # Warp Gate
+        - 380 # Deep Space Transport
+        - 381 # Elite Battleship
+        - 383 # Destructible Sentry Gun
+        - 419 # Combat Battlecruiser
+        - 420 # Destroyer
+        - 463 # Mining Barge
+        - 485 # Dreadnought
+        - 513 # Freighter
+        - 540 # Command Ship
+        - 541 # Interdictor
+        - 543 # Exhumer
+        - 547 # Carrier
+        - 548 # Interdiction Probe
+        - 549 # Fighter Drone
+        - 659 # Supercarrier
+        - 830 # Covert Ops
+        - 831 # Interceptor
+        - 832 # Logistics
+        - 833 # Force Recon Ship
+        - 834 # Stealth Bomber
+        - 863 # Bomb ECM
+        - 864 # Bomb Energy
+        - 883 # Capital Industrial Ship
+        - 893 # Electronic Attack Ship
+        - 894 # Heavy Interdiction Cruiser
+        - 897 # Covert Cynosural Field
+        - 898 # Black Ops
+        - 900 # Marauder
+        - 902 # Jump Freighter
+        - 906 # Combat Recon Ship
+        - 922 # Capture Point
+        - 925 # FW Infrastructure Hub
+        - 934 # Zombie Entities
+        - 941 # Industrial Command Ship
+        - 963 # Strategic Cruiser
+        - 988 # Wormhole
+        - 1003 # Territorial Claim Unit
+        - 1004 # Defense Bunkers
+        - 1012 # Sovereignty Hub
+        - 1022 # Prototype Exploration Ship
+        - 1023 # Fighter Bomber
+        - 1081 # Mercenary Bases
+        - 1082 # Capsuleer Bases
+        - 1201 # Attack Battlecruiser
+        - 1202 # Blockade Runner
+        - 1249 # Mobile Cyno Inhibitor
+        - 1273 # Encounter Surveillance System
+        - 1275 # Mobile Scan Inhibitor
+        - 1276 # Mobile Micro Jump Unit
+        - 1283 # Expedition Frigate
+        - 1305 # Tactical Destroyer
+        - 1316 # Entosis Command Node
+        - 1404 # Engineering Complex
+        - 1406 # Refinery
+        - 1408 # Upwell Jump Gate
+        - 1527 # Logistics Frigate
+        - 1534 # Command Destroyer
+        - 1538 # Force Auxiliary
+        - 1548 # Guided Bomb
+        - 1657 # Citadel
+        - 1704 # Super Weapon Beacon
+        - 1876 # ♦ Engineering Complex
+        - 1924 # ♦ Stronghold
+        - 1972 # Flag Cruiser
+        - 1991 # Filament Trace
+        - 2001 # Citizen Ships
+        - 2015 # Upwell Monument
+        - 2016 # Upwell Cyno Jammer
+        - 2017 # Upwell Cyno Beacon
+        - 2020 # Cynosural Fields
+        - 4033 # Destructible Effect Beacon
+        - 4055 # Invisible Beacon
+        - 4079 # Encounter Surveillance System
+        - 4081 # Disrupted Gate
+        - 4088 # Interdiction Burst Probes
+        - 4093 # Mobile Cynosural Beacon
+        - 4107 # Mobile Observatory
+        - 4137 # Mobile Analysis Beacon
+        - 4477 # FW Propaganda Broadcast Structure
+        - 4494 # Control Point
+        - 4499 # FW Listening Outpost
+        - 4547 # Interstellar Shipcaster Beacon
+        - 4548 # Shipcaster Beacon Constructor
+        - 4549 # Interstellar Shipcaster
+        - 4594 # Lancer Dreadnought
+        - 4644 # Pirate Forward Operating Base
+        - 4713 # Guidance Objectives
+        - 4719 # Rift
+        - 4744 # Upwell Moon Drill
+        - 4810 # Mercenary Den

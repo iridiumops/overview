@@ -1,0 +1,15 @@
+- - '<color=0xFFFF9900>❖ Ships: Enemy Utility (red+neutral)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 21
+    - - groups
+      - - 540 # Command Ship
+        - 541 # Interdictor
+        - 894 # Heavy Interdiction Cruiser
+        - 1534 # Command Destroyer

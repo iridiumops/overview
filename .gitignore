@@ -1,0 +1,25 @@
+# env folders
+.idea/
+.temp/
+.git/
+
+# temp files and binaries
+bin/
+logs/
+temp/
+output/
+
+# libraries and tools
+lib/
+tools/
+
+# tests
+tests/
+
+# other
+assets/
+
+# files
+.empty
+repo.bat
+TODO.md

@@ -1,0 +1,19 @@
+- - '<color=0xFFFFEE00>✜ Drones: Fighters (red+neutral)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 21
+    - - groups
+      - - 549 # Fighter Drone
+        - 1023 # Fighter Bomber
+        - 1537 # Support Fighter
+        - 1652 # Light Fighter
+        - 1653 # Heavy Fighter
+        - 4777 # Structure Light Fighter
+        - 4778 # Structure Support Fighter
+        - 4779 # Structure Heavy Fighter

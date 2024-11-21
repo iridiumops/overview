@@ -1,0 +1,545 @@
+- - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
+  - - - alwaysShownStates
+      - []
+    - - filteredStates
+      - []
+    - - groups
+      - - 6 # Sun
+        - 7 # Planet
+        - 8 # Moon
+        - 9 # Asteroid Belt
+        - 10 # Stargate
+        - 12 # Cargo Container
+        - 15 # Station
+        - 25 # Frigate
+        - 26 # Cruiser
+        - 27 # Battleship
+        - 28 # Hauler
+        - 29 # Capsule
+        - 30 # Titan
+        - 31 # Shuttle
+        - 90 # Bomb
+        - 99 # Sentry Gun
+        - 100 # Combat Drone
+        - 101 # Mining Drone
+        - 180 # Protective Sentry Gun
+        - 182 # Police Drone
+        - 185 # Pirate Drone
+        - 186 # Wreck
+        - 237 # Corvette
+        - 279 # LCO Drone
+        - 286 # Minor Threat
+        - 287 # Rogue Drone
+        - 288 # Faction Drone
+        - 297 # Convoy
+        - 298 # Convoy Drone
+        - 301 # Concord Drone
+        - 306 # Spawn Container
+        - 310 # Beacon
+        - 318 # Landmark
+        - 319 # Large Collidable Structure
+        - 323 # Billboard
+        - 324 # Assault Frigate
+        - 335 # Temporary Cloud
+        - 336 # Mobile Sentry Gun
+        - 337 # Mission Drone
+        - 340 # Secure Cargo Container
+        - 358 # Heavy Assault Cruiser
+        - 361 # Mobile Warp Disruptor
+        - 365 # Control Tower
+        - 366 # Warp Gate
+        - 380 # Deep Space Transport
+        - 381 # Elite Battleship
+        - 383 # Destructible Sentry Gun
+        - 411 # Force Field
+        - 419 # Combat Battlecruiser
+        - 420 # Destroyer
+        - 435 # Deadspace Overseer
+        - 441 # Stasis Webification Battery
+        - 443 # Warp Scrambling Battery
+        - 446 # Customs Official
+        - 448 # Audit Log Secure Container
+        - 463 # Mining Barge
+        - 479 # Scanner Probe
+        - 485 # Dreadnought
+        - 494 # Deadspace Overseer's Structure
+        - 495 # Deadspace Overseer's Sentry
+        - 496 # Deadspace Overseer's Belongings
+        - 513 # Freighter
+        - 517 # Agents in Space
+        - 520 # Storyline Frigate
+        - 522 # Storyline Cruiser
+        - 523 # Storyline Battleship
+        - 527 # Storyline Mission Frigate
+        - 533 # Storyline Mission Cruiser
+        - 534 # Storyline Mission Battleship
+        - 540 # Command Ship
+        - 541 # Interdictor
+        - 543 # Exhumer
+        - 544 # Energy Neutralizer Drone
+        - 547 # Carrier
+        - 548 # Interdiction Probe
+        - 549 # Fighter Drone
+        - 550 # Asteroid Angel Cartel Frigate
+        - 551 # Asteroid Angel Cartel Cruiser
+        - 552 # Asteroid Angel Cartel Battleship
+        - 553 # Asteroid Angel Cartel Officer
+        - 554 # Asteroid Angel Cartel Hauler
+        - 555 # Asteroid Blood Raiders Cruiser
+        - 556 # Asteroid Blood Raiders Battleship
+        - 557 # Asteroid Blood Raiders Frigate
+        - 558 # Asteroid Blood Raiders Hauler
+        - 559 # Asteroid Blood Raiders Officer
+        - 560 # Asteroid Guristas Battleship
+        - 561 # Asteroid Guristas Cruiser
+        - 562 # Asteroid Guristas Frigate
+        - 563 # Asteroid Guristas Hauler
+        - 564 # Asteroid Guristas Officer
+        - 565 # Asteroid Sansha's Nation Battleship
+        - 566 # Asteroid Sansha's Nation Cruiser
+        - 567 # Asteroid Sansha's Nation Frigate
+        - 568 # Asteroid Sansha's Nation Hauler
+        - 569 # Asteroid Sansha's Nation Officer
+        - 570 # Asteroid Serpentis Battleship
+        - 571 # Asteroid Serpentis Cruiser
+        - 572 # Asteroid Serpentis Frigate
+        - 573 # Asteroid Serpentis Hauler
+        - 574 # Asteroid Serpentis Officer
+        - 575 # Asteroid Angel Cartel Destroyer
+        - 576 # Asteroid Angel Cartel BattleCruiser
+        - 577 # Asteroid Blood Raiders Destroyer
+        - 578 # Asteroid Blood Raiders BattleCruiser
+        - 579 # Asteroid Guristas Destroyer
+        - 580 # Asteroid Guristas BattleCruiser
+        - 581 # Asteroid Sansha's Nation Destroyer
+        - 582 # Asteroid Sansha's Nation BattleCruiser
+        - 583 # Asteroid Serpentis Destroyer
+        - 584 # Asteroid Serpentis BattleCruiser
+        - 593 # Deadspace Angel Cartel BattleCruiser
+        - 594 # Deadspace Angel Cartel Battleship
+        - 595 # Deadspace Angel Cartel Cruiser
+        - 596 # Deadspace Angel Cartel Destroyer
+        - 597 # Deadspace Angel Cartel Frigate
+        - 602 # Deadspace Blood Raiders BattleCruiser
+        - 603 # Deadspace Blood Raiders Battleship
+        - 604 # Deadspace Blood Raiders Cruiser
+        - 605 # Deadspace Blood Raiders Destroyer
+        - 606 # Deadspace Blood Raiders Frigate
+        - 611 # Deadspace Guristas BattleCruiser
+        - 612 # Deadspace Guristas Battleship
+        - 613 # Deadspace Guristas Cruiser
+        - 614 # Deadspace Guristas Destroyer
+        - 615 # Deadspace Guristas Frigate
+        - 620 # Deadspace Sansha's Nation BattleCruiser
+        - 621 # Deadspace Sansha's Nation Battleship
+        - 622 # Deadspace Sansha's Nation Cruiser
+        - 623 # Deadspace Sansha's Nation Destroyer
+        - 624 # Deadspace Sansha's Nation Frigate
+        - 629 # Deadspace Serpentis BattleCruiser
+        - 630 # Deadspace Serpentis Battleship
+        - 631 # Deadspace Serpentis Cruiser
+        - 632 # Deadspace Serpentis Destroyer
+        - 633 # Deadspace Serpentis Frigate
+        - 639 # Electronic Warfare Drone
+        - 640 # Logistic Drone
+        - 641 # Stasis Webifying Drone
+        - 649 # Freight Container
+        - 659 # Supercarrier
+        - 665 # Mission Amarr Empire Frigate
+        - 666 # Mission Amarr Empire Battlecruiser
+        - 667 # Mission Amarr Empire Battleship
+        - 668 # Mission Amarr Empire Cruiser
+        - 669 # Mission Amarr Empire Destroyer
+        - 670 # Mission Amarr Empire Other
+        - 671 # Mission Caldari State Frigate
+        - 672 # Mission Caldari State Battlecruiser
+        - 673 # Mission Caldari State Cruiser
+        - 674 # Mission Caldari State Battleship
+        - 675 # Mission Caldari State Other
+        - 676 # Mission Caldari State Destroyer
+        - 677 # Mission Gallente Federation Frigate
+        - 678 # Mission Gallente Federation Cruiser
+        - 679 # Mission Gallente Federation Destroyer
+        - 680 # Mission Gallente Federation Battleship
+        - 681 # Mission Gallente Federation Battlecruiser
+        - 682 # Mission Gallente Federation Other
+        - 683 # Mission Minmatar Republic Frigate
+        - 684 # Mission Minmatar Republic Destroyer
+        - 685 # Mission Minmatar Republic Battlecruiser
+        - 686 # Mission Minmatar Republic Other
+        - 687 # Mission Khanid Frigate
+        - 688 # Mission Khanid Destroyer
+        - 689 # Mission Khanid Cruiser
+        - 690 # Mission Khanid Battlecruiser
+        - 691 # Mission Khanid Battleship
+        - 692 # Mission Khanid Other
+        - 693 # Mission CONCORD Frigate
+        - 694 # Mission CONCORD Destroyer
+        - 695 # Mission CONCORD Cruiser
+        - 696 # Mission CONCORD Battlecruiser
+        - 697 # Mission CONCORD Battleship
+        - 698 # Mission CONCORD Other
+        - 699 # Mission Mordu Frigate
+        - 700 # Mission Mordu Destroyer
+        - 701 # Mission Mordu Cruiser
+        - 702 # Mission Mordu Battlecruiser
+        - 703 # Mission Mordu Battleship
+        - 704 # Mission Mordu Other
+        - 705 # Mission Minmatar Republic Cruiser
+        - 706 # Mission Minmatar Republic Battleship
+        - 707 # Jump Portal Array
+        - 711 # Harvestable Cloud
+        - 715 # Destructible Agents In Space
+        - 755 # Asteroid Rogue Drone BattleCruiser
+        - 756 # Asteroid Rogue Drone Battleship
+        - 757 # Asteroid Rogue Drone Cruiser
+        - 758 # Asteroid Rogue Drone Destroyer
+        - 759 # Asteroid Rogue Drone Frigate
+        - 760 # Asteroid Rogue Drone Hauler
+        - 761 # Asteroid Rogue Drone Swarm
+        - 784 # Large Collidable Ship
+        - 789 # Asteroid Angel Cartel Commander Frigate
+        - 790 # Asteroid Angel Cartel Commander Cruiser
+        - 791 # Asteroid Blood Raiders Commander Cruiser
+        - 792 # Asteroid Blood Raiders Commander Frigate
+        - 793 # Asteroid Angel Cartel Commander BattleCruiser
+        - 794 # Asteroid Angel Cartel Commander Destroyer
+        - 795 # Asteroid Blood Raiders Commander BattleCruiser
+        - 796 # Asteroid Blood Raiders Commander Destroyer
+        - 797 # Asteroid Guristas Commander BattleCruiser
+        - 798 # Asteroid Guristas Commander Cruiser
+        - 799 # Asteroid Guristas Commander Destroyer
+        - 800 # Asteroid Guristas Commander Frigate
+        - 801 # Deadspace Rogue Drone BattleCruiser
+        - 802 # Deadspace Rogue Drone Battleship
+        - 803 # Deadspace Rogue Drone Cruiser
+        - 804 # Deadspace Rogue Drone Destroyer
+        - 805 # Deadspace Rogue Drone Frigate
+        - 806 # Deadspace Rogue Drone Swarm
+        - 807 # Asteroid Sansha's Nation Commander BattleCruiser
+        - 808 # Asteroid Sansha's Nation Commander Cruiser
+        - 809 # Asteroid Sansha's Nation Commander Destroyer
+        - 810 # Asteroid Sansha's Nation Commander Frigate
+        - 811 # Asteroid Serpentis Commander BattleCruiser
+        - 812 # Asteroid Serpentis Commander Cruiser
+        - 813 # Asteroid Serpentis Commander Destroyer
+        - 814 # Asteroid Serpentis Commander Frigate
+        - 816 # Mission Generic Battleships
+        - 817 # Mission Generic Cruisers
+        - 818 # Mission Generic Frigates
+        - 819 # Deadspace Overseer Frigate
+        - 820 # Deadspace Overseer Cruiser
+        - 821 # Deadspace Overseer Battleship
+        - 822 # Mission Thukker Battlecruiser
+        - 823 # Mission Thukker Battleship
+        - 824 # Mission Thukker Cruiser
+        - 825 # Mission Thukker Destroyer
+        - 826 # Mission Thukker Frigate
+        - 827 # Mission Thukker Other
+        - 828 # Mission Generic Battle Cruisers
+        - 829 # Mission Generic Destroyers
+        - 830 # Covert Ops
+        - 831 # Interceptor
+        - 832 # Logistics
+        - 833 # Force Recon Ship
+        - 834 # Stealth Bomber
+        - 843 # Asteroid Rogue Drone Commander BattleCruiser
+        - 844 # Asteroid Rogue Drone Commander Battleship
+        - 845 # Asteroid Rogue Drone Commander Cruiser
+        - 846 # Asteroid Rogue Drone Commander Destroyer
+        - 847 # Asteroid Rogue Drone Commander Frigate
+        - 848 # Asteroid Angel Cartel Commander Battleship
+        - 849 # Asteroid Blood Raiders Commander Battleship
+        - 850 # Asteroid Guristas Commander Battleship
+        - 851 # Asteroid Sansha's Nation Commander Battleship
+        - 852 # Asteroid Serpentis Commander Battleship
+        - 861 # Mission Fighter Drone
+        - 863 # Bomb ECM
+        - 864 # Bomb Energy
+        - 865 # Mission Amarr Empire Carrier
+        - 866 # Mission Caldari State Carrier
+        - 867 # Mission Gallente Federation Carrier
+        - 868 # Mission Minmatar Republic Carrier
+        - 875 # Mission Faction Transports
+        - 883 # Capital Industrial Ship
+        - 893 # Electronic Attack Ship
+        - 894 # Heavy Interdiction Cruiser
+        - 897 # Covert Cynosural Field
+        - 898 # Black Ops
+        - 900 # Marauder
+        - 902 # Jump Freighter
+        - 906 # Combat Recon Ship
+        - 920 # Effect Beacon
+        - 922 # Capture Point
+        - 924 # Mission Faction Battleship
+        - 925 # FW Infrastructure Hub
+        - 927 # Mission Faction Haulers
+        - 934 # Zombie Entities
+        - 941 # Industrial Command Ship
+        - 952 # Mission Container
+        - 959 # Deadspace Sleeper Sleepless Sentinel
+        - 960 # Deadspace Sleeper Awakened Sentinel
+        - 961 # Deadspace Sleeper Emergent Sentinel
+        - 963 # Strategic Cruiser
+        - 982 # Deadspace Sleeper Sleepless Defender
+        - 983 # Deadspace Sleeper Sleepless Patroller
+        - 984 # Deadspace Sleeper Awakened Defender
+        - 985 # Deadspace Sleeper Awakened Patroller
+        - 986 # Deadspace Sleeper Emergent Defender
+        - 987 # Deadspace Sleeper Emergent Patroller
+        - 988 # Wormhole
+        - 1003 # Territorial Claim Unit
+        - 1004 # Defense Bunkers
+        - 1005 # Sovereignty Blockade Unit
+        - 1006 # Mission Faction Cruiser
+        - 1007 # Mission Faction Frigate
+        - 1012 # Sovereignty Hub
+        - 1022 # Prototype Exploration Ship
+        - 1023 # Fighter Bomber
+        - 1025 # Orbital Infrastructure
+        - 1051 # Incursion Sansha's Nation Industrial
+        - 1052 # Incursion Sansha's Nation Capital
+        - 1053 # Incursion Sansha's Nation Frigate
+        - 1054 # Incursion Sansha's Nation Cruiser
+        - 1056 # Incursion Sansha's Nation Battleship
+        - 1081 # Mercenary Bases
+        - 1082 # Capsuleer Bases
+        - 1106 # Orbital Construction Platform
+        - 1149 # Mobile Jump Disruptor
+        - 1159 # Salvage Drone
+        - 1166 # FW Minmatar Republic Frigate
+        - 1167 # FW Caldari State Frigate
+        - 1168 # FW Gallente Federation Frigate
+        - 1169 # FW Amarr Empire Frigate
+        - 1174 # Asteroid Rogue Drone Officer
+        - 1175 # FW Amarr Empire Destroyer
+        - 1176 # FW Caldari State Destroyer
+        - 1177 # FW Gallente Federation Destroyer
+        - 1178 # FW Minmatar Republic Destroyer
+        - 1179 # FW Amarr Empire Cruiser
+        - 1180 # FW Caldari State Cruiser
+        - 1181 # FW Gallente Federation Cruiser
+        - 1182 # FW Minmatar Republic Cruiser
+        - 1183 # FW Amarr Empire Battlecruiser
+        - 1184 # FW Caldari State Battlecruiser
+        - 1185 # FW Gallente Federation Battlecruiser
+        - 1186 # FW Minmatar Republic Battlecruiser
+        - 1201 # Attack Battlecruiser
+        - 1202 # Blockade Runner
+        - 1207 # Scatter Container
+        - 1246 # Mobile Depot
+        - 1249 # Mobile Cyno Inhibitor
+        - 1250 # Mobile Tractor Unit
+        - 1252 # Ghost Sites Angel Cartel Cruiser
+        - 1255 # Ghost Sites Blood Raiders Cruiser
+        - 1259 # Ghost Sites Guristas Cruiser
+        - 1262 # Ghost Sites Serpentis Cruiser
+        - 1265 # Ghost Sites Sanshas Cruiser
+        - 1273 # Encounter Surveillance System
+        - 1275 # Mobile Scan Inhibitor
+        - 1276 # Mobile Micro Jump Unit
+        - 1283 # Expedition Frigate
+        - 1285 # Asteroid Mordus Legion Commander Frigate
+        - 1286 # Asteroid Mordus Legion Commander Cruiser
+        - 1287 # Asteroid Mordus Legion Commander Battleship
+        - 1288 # Ghost Sites Mordu's Legion
+        - 1305 # Tactical Destroyer
+        - 1307 # Roaming Sleepers Cruiser
+        - 1310 # Drifter Battleship
+        - 1316 # Entosis Command Node
+        - 1402 # Amarr Navy Roaming Battleship
+        - 1404 # Engineering Complex
+        - 1406 # Refinery
+        - 1408 # Upwell Jump Gate
+        - 1411 # Amarr Navy Roaming Cruiser
+        - 1412 # Amarr Navy Roaming Capital
+        - 1413 # Amarr Navy Roaming Logistics
+        - 1414 # Amarr Navy Roaming Frigate
+        - 1452 # Irregular Drone
+        - 1453 # Irregular EW Drone
+        - 1454 # Irregular Fighter
+        - 1455 # Irregular Fighter Squadron
+        - 1465 # Mission Generic Supercarrier
+        - 1527 # Logistics Frigate
+        - 1529 # Deadspace Sleeper Upgraded Avenger
+        - 1530 # Drifter Response Battleship
+        - 1534 # Command Destroyer
+        - 1537 # Support Fighter
+        - 1538 # Force Auxiliary
+        - 1548 # Guided Bomb
+        - 1566 # Irregular Shuttle
+        - 1567 # Irregular Corvette
+        - 1568 # Irregular Frigate
+        - 1652 # Light Fighter
+        - 1653 # Heavy Fighter
+        - 1657 # Citadel
+        - 1664 # Irregular Destroyer
+        - 1665 # Irregular Cruiser
+        - 1666 # Irregular Battlecruiser
+        - 1667 # Irregular Battleship
+        - 1681 # Asteroid Angel Cartel Dreadnought
+        - 1682 # Asteroid Angel Cartel Titan
+        - 1683 # Asteroid Blood Raider Dreadnought
+        - 1684 # Asteroid Blood Raider Titan
+        - 1685 # Asteroid Guristas Dreadnought
+        - 1686 # Asteroid Guristas Titan
+        - 1687 # Asteroid Sansha's Nation Dreadnought
+        - 1688 # Asteroid Sansha's Nation Supercarrier
+        - 1689 # Asteroid Serpentis Dreadnought
+        - 1690 # Asteroid Serpentis Titan
+        - 1691 # Asteroid Rogue Drone Carrier
+        - 1692 # Asteroid Rogue Drone Supercarrier
+        - 1704 # Super Weapon Beacon
+        - 1720 # Roaming Serpentis Battleship
+        - 1721 # Roaming Serpentis Cruiser
+        - 1722 # Roaming Serpentis Frigate
+        - 1724 # Irregular Dreadnought
+        - 1725 # Irregular Force Auxiliary
+        - 1726 # Irregular Carrier
+        - 1727 # Roaming Angel Cartel Battleship
+        - 1728 # Roaming Angel Cartel Cruiser
+        - 1729 # Roaming Angel Cartel Frigate
+        - 1731 # Irregular Super Carrier
+        - 1734 # Roaming Blood Raider Frigate
+        - 1735 # Roaming Blood Raider Cruiser
+        - 1736 # Roaming Blood Raider Battlecruiser
+        - 1737 # Roaming Blood Raider Battleship
+        - 1759 # Irregular Titan
+        - 1761 # Irregular Mining Frigate
+        - 1762 # Irregular Mining Barge
+        - 1764 # ♦ Mining Frigate
+        - 1765 # ♦ Mining Barge
+        - 1766 # ♦ Mining Exhumer
+        - 1767 # ♦ Mining Hauler
+        - 1768 # Seeker Scouts
+        - 1788 # Hidden Zenith Drifters
+        - 1789 # Hidden Zenith Amarr Battleship
+        - 1790 # Hidden Zenith Amarr Cruiser
+        - 1791 # Hidden Zenith Amarr Frigate
+        - 1792 # Hidden Zenith Caldari Battleship
+        - 1793 # Hidden Zenith Caldari Cruiser
+        - 1794 # Hidden Zenith Caldari Frigate
+        - 1795 # Hidden Zenith Gallente Battleship
+        - 1796 # Hidden Zenith Gallente Cruiser
+        - 1797 # Hidden Zenith Gallente Frigate
+        - 1798 # Hidden Zenith Minmatar Battleship
+        - 1799 # Hidden Zenith Minmatar Cruiser
+        - 1800 # Hidden Zenith Minmatar Frigate
+        - 1803 # ♦ Frigate
+        - 1804 # Hidden Zenith Amarr Capital
+        - 1805 # Hidden Zenith Caldari Capital
+        - 1806 # Hidden Zenith Gallente Capital
+        - 1807 # Hidden Zenith Minmatar Capital
+        - 1813 # ♦ Cruiser
+        - 1814 # ♦ Battleship
+        - 1872 # Structure Entities
+        - 1876 # ♦ Engineering Complex
+        - 1878 # ♦ Titan
+        - 1879 # ♦ Force Auxiliary
+        - 1880 # ♦ Dreadnought
+        - 1895 # Irregular Industrial
+        - 1896 # ♦ Industrial Command
+        - 1904
+        - 1905
+        - 1906
+        - 1907
+        - 1908
+        - 1909 # ♦ Battlecruiser
+        - 1910
+        - 1915 # Moon Mining Beacon
+        - 1924 # ♦ Stronghold
+        - 1925 # Irregular Industrial Command Ship
+        - 1926 # Irregular Freighter
+        - 1927 # Irregular Structure
+        - 1928 # Irregular Container
+        - 1929 # Irregular - Unidentified
+        - 1956 # Drifter Reinforcements
+        - 1972 # Flag Cruiser
+        - 1978 # Industrial Support Facility
+        - 1981 # Triglavian Support Pylons
+        - 1982 # Abyssal Spaceship Entities
+        - 1991 # Filament Trace
+        - 1997 # Abyssal Drone Entities
+        - 2001 # Citizen Ships
+        - 2009 # Precursor Cache
+        - 2015 # Upwell Monument
+        - 2016 # Upwell Cyno Jammer
+        - 2017 # Upwell Cyno Beacon
+        - 2020 # Cynosural Fields
+        - 4028 # Triglavian Entities
+        - 4033 # Destructible Effect Beacon
+        - 4034 # EDENCOM Entities
+        - 4035 # Drifter Entities
+        - 4036 # Sleeper Entities
+        - 4037 # Rogue Drone Entities
+        - 4053 # Irregular Capsule
+        - 4055 # Invisible Beacon
+        - 4070 # Exotic Artefact
+        - 4073 # Temporary Collidable Structure
+        - 4079 # Encounter Surveillance System
+        - 4081 # Disrupted Gate
+        - 4088 # Interdiction Burst Probes
+        - 4093 # Mobile Cynosural Beacon
+        - 4105 # Unidentified Entities
+        - 4106 # AIR Entities I
+        - 4107 # Mobile Observatory
+        - 4128 # AIR Entities II
+        - 4130 # Unidentified Entities II
+        - 4137 # Mobile Analysis Beacon
+        - 4431 # FW Amarr Empire Battleship
+        - 4432 # FW Caldari State Battleship
+        - 4433 # FW Gallente Federation Battleship
+        - 4434 # FW Minmatar Republic Battleship
+        - 4477 # FW Propaganda Broadcast Structure
+        - 4494 # Control Point
+        - 4499 # FW Listening Outpost
+        - 4501 # Mission Generic Capsules
+        - 4547 # Interstellar Shipcaster Beacon
+        - 4548 # Shipcaster Beacon Constructor
+        - 4549 # Interstellar Shipcaster
+        - 4569 # Homefront Operations Enemy Frigate
+        - 4570 # Homefront Operations Enemy Destroyer
+        - 4571 # Homefront Operations Enemy Cruiser
+        - 4572 # Homefront Operations Allied Dreadnought
+        - 4573 # Homefront Operations Enemy Battlecruiser
+        - 4574 # Homefront Operations Enemy Battleship
+        - 4576 # Homefront Operations Structure
+        - 4577 # Homefront Operations Hauler
+        - 4594 # Lancer Dreadnought
+        - 4636 # Pirate Entities
+        - 4637 # Insurgency Roaming Pirates
+        - 4638 # Insurgency Roaming Enforcers
+        - 4644 # Pirate Forward Operating Base
+        - 4647 # Insurgency Pirate Frigate
+        - 4648 # Insurgency Pirate Destroyer
+        - 4649 # Insurgency Pirate Cruiser
+        - 4650 # Insurgency Pirate Battlecruiser
+        - 4651 # Insurgency Pirate Battleship
+        - 4652 # Insurgency Mordu Frigate
+        - 4653 # Insurgency Mordu Destroyer
+        - 4654 # Insurgency Mordu Cruiser
+        - 4655 # Insurgency Mordu Battlecruiser
+        - 4656 # Insurgency Mordu Battleship
+        - 4673 # Insurgency Mining Ship
+        - 4712 # Guided Entities
+        - 4713 # Guidance Objectives
+        - 4719 # Rift
+        - 4736 # Skyhook
+        - 4737 # Homefront Operations Shuttle
+        - 4744 # Upwell Moon Drill
+        - 4745 # Skyhook Reagent Silo
+        - 4771 # Homefront Operations Noncombatant
+        - 4777 # Structure Light Fighter
+        - 4778 # Structure Support Fighter
+        - 4779 # Structure Heavy Fighter
+        - 4795 # Asteroid Angel Cartel Officer Cruiser
+        - 4796 # Asteroid Angel Cartel Officer Frigate
+        - 4797 # Asteroid Blood Raiders Officer Cruiser
+        - 4798 # Asteroid Blood Raiders Officer Frigate
+        - 4799 # Asteroid Guristas Officer Cruiser
+        - 4800 # Asteroid Guristas Officer Frigate
+        - 4801 # Asteroid Sansha's Nation Officer Cruiser
+        - 4802 # Asteroid Sansha's Nation Officer Frigate
+        - 4803 # Asteroid Serpentis Officer Cruiser
+        - 4804 # Asteroid Serpentis Officer Frigate
+        - 4810 # Mercenary Den

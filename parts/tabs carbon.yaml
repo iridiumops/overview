@@ -1,0 +1,184 @@
+tabSetup:
+- - 0
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
+    - - color
+      - - 1.0
+        - 1.0
+        - 1.0
+    - - name
+      - <b> SYSTEM </b>
+    - - overview
+      - '<color=0xFFFFFFFF>✪ System: System</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+- - 1
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
+    - - color
+      - - 0.0784
+        - 0.6901
+        - 0.8235
+    - - name
+      - <b> MAIN </b>
+    - - overview
+      - '<color=0xFF88DDEE>✕ Main: <color=0xFFFFFFFF>System</color> & <color=0xFF14B0D2>PVX (+extra)</color></color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - VELOCITY
+        - ANGULARVELOCITY
+        - CORPORATION
+        - ALLIANCE
+- - 2
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
+    - - color
+      - - 1.0
+        - 0.6
+        - 0.0
+    - - name
+      - <b> SHIPS </b>
+    - - overview
+      - '<color=0xFFFF9900>❖ Ships: Enemy All (red+neutral)</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - VELOCITY
+        - ANGULARVELOCITY
+        - ALLIANCE
+        - CORPORATION
+- - 3
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat (-wrecks)</color>'
+    - - color
+      - - 1.0
+        - 0.6
+        - 0.0
+    - - name
+      - <b> NPC </b>
+    - - overview
+      - '<color=0xFFFF9900>❖ Ships: NPCs (+turrets)</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - VELOCITY
+        - ANGULARVELOCITY
+- - 4
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
+    - - color
+      - - 1.0
+        - 0.9333
+        - 0.0
+    - - name
+      - <b> DRONES </b>
+    - - overview
+      - '<color=0xFFFFEE00>✜ Drones: Drones and Fighters (red+neutral)</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - VELOCITY
+        - ANGULARVELOCITY
+        - ALLIANCE
+        - CORPORATION
+- - 5
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
+    - - color
+      - - 1.0
+        - 0.3333
+        - 0.0
+    - - name
+      - '<fontsize=16> ➔ </fontsize>'
+    - - overview
+      - '<color=0xFFFF5500>➔ Warp: Warp out!</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+- - 6
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
+    - - color
+      - - 1.0
+        - 1.0
+        - 1.0
+    - - name
+      - '<fontsize=16> ❒ </fontsize>'
+    - - overview
+      - '<color=0xFFCCCCCC>❒ Loot: Loot and salvage</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - CORPORATION
+        - ALLIANCE
+- - 7
+  - - - bracket
+      - _BracketFilterShowAll
+    - - color
+      - - 1.0
+        - 1.0
+        - 1.0
+    - - name
+      - '<fontsize=16> ⌘ </fontsize>'
+    - - overview
+      - '<color=0xFFCCCCCC>⌘ All: All</color>'
+    - - tabColumnOrder
+      - - TAG
+        - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - CORPORATION
+        - ALLIANCE
+        - FACTION
+        - MILITIA
+        - SIZE
+        - VELOCITY
+        - RADIALVELOCITY
+        - TRANSVERSALVELOCITY
+        - ANGULARVELOCITY
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - CORPORATION
+        - ALLIANCE
+        - VELOCITY
+        - ANGULARVELOCITY
+- - 8
+  - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
+    - - color
+      - - 0.098
+        - 0.6
+        - 0.098
+    - - name
+      - '<fontsize=16> ❤ </fontsize>'
+    - - overview
+      - '<color=0xFF199919>❖ Ships: Friendly</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - VELOCITY
+        - ANGULARVELOCITY
+        - ALLIANCE
+        - CORPORATION

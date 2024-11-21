@@ -1,0 +1,76 @@
+- - '<color=0xFFEE22EE>❖ Ships: Fleet</color>'
+  - - - alwaysShownStates
+      - - 11
+    - - filteredStates
+      - - 9
+        - 10
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 36
+        - 37
+        - 44
+        - 45
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 66
+        - 68
+    - - groups
+      - - 25 # Frigate
+        - 26 # Cruiser
+        - 27 # Battleship
+        - 28 # Hauler
+        - 29 # Capsule
+        - 30 # Titan
+        - 31 # Shuttle
+        - 237 # Corvette
+        - 324 # Assault Frigate
+        - 358 # Heavy Assault Cruiser
+        - 380 # Deep Space Transport
+        - 381 # Elite Battleship
+        - 419 # Combat Battlecruiser
+        - 420 # Destroyer
+        - 463 # Mining Barge
+        - 485 # Dreadnought
+        - 513 # Freighter
+        - 540 # Command Ship
+        - 541 # Interdictor
+        - 543 # Exhumer
+        - 547 # Carrier
+        - 659 # Supercarrier
+        - 830 # Covert Ops
+        - 831 # Interceptor
+        - 832 # Logistics
+        - 833 # Force Recon Ship
+        - 834 # Stealth Bomber
+        - 883 # Capital Industrial Ship
+        - 893 # Electronic Attack Ship
+        - 894 # Heavy Interdiction Cruiser
+        - 898 # Black Ops
+        - 900 # Marauder
+        - 902 # Jump Freighter
+        - 906 # Combat Recon Ship
+        - 941 # Industrial Command Ship
+        - 963 # Strategic Cruiser
+        - 1022 # Prototype Exploration Ship
+        - 1201 # Attack Battlecruiser
+        - 1202 # Blockade Runner
+        - 1283 # Expedition Frigate
+        - 1305 # Tactical Destroyer
+        - 1527 # Logistics Frigate
+        - 1534 # Command Destroyer
+        - 1538 # Force Auxiliary
+        - 1972 # Flag Cruiser
+        - 2001 # Citizen Ships
+        - 4594 # Lancer Dreadnought
