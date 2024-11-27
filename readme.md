@@ -4,7 +4,7 @@ An EVE Online overview pack.
 
 ## For users
 
-- See [wiki article on IridiumOps website](https://iridiumops.uk.to/#!/wiki/overview.md) for details.
+- See [wiki article on IridiumOps website](https://iridiumops.github.io/website/#!/wiki/overview.md) for details.
 - Get the latest version in [Releases](https://github.com/iridiumops/overview/releases)
 - See `changelog.md` for latest changes and release notes.
 
@@ -25,7 +25,7 @@ Contact `Thomas Iridium` in-game or via email: <iridiumops@gmail.com>
 
 ## Relevant links
 
-- https://iridiumops.uk.to/
+- https://iridiumops.github.io/website/
 - https://eveonline.com/
 - https://wiki.eveuniversity.org/Overview
 

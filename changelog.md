@@ -22,7 +22,7 @@ But fear not. The updated version for current expansion is now available. Thank 
 
 And further thanks to everyone who reached out, reminding me to finally do it :)
 
-P.S. If I ever disappear again, you are all free to just fork the overview pack, all files are on github now, released as open source. Or just use the EVE University overview pack - it's quite alright.
+P.S. If I ever disappear again, you are all free to just fork the overview pack, all files are on GitHub now, released as open source. Or just use the EVE University overview pack - it's quite alright.
 
 ## v3.4.1-beta (2024/11/10)
 
