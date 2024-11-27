@@ -17,7 +17,7 @@ parts_dir = "./parts"
 # list of all parts and corresponding names of yaml files
 parts = {
     "general": "general",
-    "presets": [
+    "filters": [
         "Brackets Combat",
         "Brackets Combat (+drones)",
         "Brackets Combat (-wrecks)",
@@ -81,9 +81,9 @@ def yaml_append(yaml_content, name):
         yaml_content.update(part_content)
 
 
-def yaml_add_preset(yaml_content, name):
+def yaml_add_filter(yaml_content, name):
     """
-    Load preset from yaml file and add it to presets inside yaml document
+    Load filter from yaml file and add it to filters inside yaml document
 
     :param yaml_content: yaml document object
     :param name: file name part
@@ -91,7 +91,7 @@ def yaml_add_preset(yaml_content, name):
     part_file_path = parts_dir + "/" + name + ".yaml"
     with open(part_file_path, 'r', encoding="utf8") as part_file:
         part_content = yaml.safe_load(part_file)
-        yaml_content["presets"].extend(part_content)
+        yaml_content["filters"].extend(part_content)
 
 
 def yaml_sort_section(data):
@@ -161,10 +161,10 @@ if __name__ == '__main__':
 
         # combine yaml parts
         yaml_append(yaml_content, parts["general"])
-        for preset in parts["presets"]:                      # add all presets defined in parts["presets"]
-            preset_name = "preset " + preset
-            yaml_comment(data_inv_types, preset_name)        # optional step, adds comments to part files with groupNames for GroupIDs
-            yaml_add_preset(yaml_content, preset_name)
+        for filter in parts["filters"]:                      # add all filters defined in parts["filters"]
+            filter_name = "filter " + filter
+            yaml_comment(data_inv_types, filter_name)        # optional step, adds comments to part files with groupNames for GroupIDs
+            yaml_add_filter(yaml_content, filter_name)
         yaml_append(yaml_content, parts["labels"])
         yaml_append(yaml_content, parts["states"])
         yaml_append(yaml_content, parts["tabs"][tab_type])
