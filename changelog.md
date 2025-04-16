@@ -2,13 +2,23 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.6.1 (2025/04/16)
+
+Revenant Expansion - EVE 22.02
+
+```
+- Removed Pirate Spawners from some tabs
+- Removed Temporary Cloud, Fighter Drone, Zombie Entities, Defense Bunkers, Fighter Bomber, Mercenary Bases, Capsuleer Bases, Invisible Beacon from filters as they don't appear on overview.
+```
+
 ## v3.6.0 (2025/04/16)
 
 Revenant Expansion - EVE 22.02
 
 ```
-+ Added two beacons
-+ Added Tyranite
++ Added Local Beacon
++ Added Pirate Spawners
++ Added Tyranite asteroid
 ```
 
 This is a minor update for "Capsuleer Day XXII: Nexus Reckoning"

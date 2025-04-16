@@ -9,7 +9,6 @@
         - 16
     - - groups
       - - 9 # Asteroid Belt
-        - 335 # Temporary Cloud
         - 450 # Arkonor
         - 451 # Bistot
         - 452 # Crokite
@@ -27,13 +26,7 @@
         - 467 # Gneiss
         - 468 # Mercoxit
         - 469 # Omber
-        - 549 # Fighter Drone
         - 711 # Harvestable Cloud
-        - 934 # Zombie Entities
-        - 1004 # Defense Bunkers
-        - 1023 # Fighter Bomber
-        - 1081 # Mercenary Bases
-        - 1082 # Capsuleer Bases
         - 1884 # Ubiquitous Moon Asteroids
         - 1911 # Empire Asteroids
         - 1920 # Common Moon Asteroids
@@ -46,7 +39,6 @@
         - 4029 # Talassonite
         - 4030 # Rakovene
         - 4031 # Bezdnacine
-        - 4055 # Invisible Beacon
         - 4094 # Scalable Decorative Asteroid
         - 4161 # AIR Ore Asteroid Resources
         - 4168 # Compressed Gas
