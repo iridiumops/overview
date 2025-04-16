@@ -91,7 +91,7 @@ def yaml_add_filter(yaml_content, name):
     part_file_path = parts_dir + "/" + name + ".yaml"
     with open(part_file_path, 'r', encoding="utf8") as part_file:
         part_content = yaml.safe_load(part_file)
-        yaml_content["filters"].extend(part_content)
+        yaml_content["presets"].extend(part_content)
 
 
 def yaml_sort_section(data):
