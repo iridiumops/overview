@@ -6,7 +6,7 @@ An EVE Online overview pack.
 
 - See [wiki article on IridiumOps website](https://iridiumops.github.io/website/#!/website/wiki/overview.md) for details.
 - Get the latest version in [Releases](https://github.com/iridiumops/overview/releases)
-- See `changelog.md` for latest changes and release notes.
+- See [Changelog](https://github.com/iridiumops/overview/blob/main/changelog.md) for latest changes and release notes.
 
 ## For developers
 

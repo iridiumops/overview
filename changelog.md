@@ -2,6 +2,17 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.6.0 (2025/04/16)
+
+Revenant Expansion - EVE 22.02
+
+```
++ Added two beacons
++ Added Tyranite
+```
+
+This is a minor update for "Capsuleer Day XXII: Nexus Reckoning"
+
 ## v3.5.0 (2024/11/20)
 
 Revenant Expansion - EVE 22.02
