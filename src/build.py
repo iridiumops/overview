@@ -116,7 +116,7 @@ def yaml_comment(data_inv_types, name):
     """
     Add groupName (string description) as yaml comment for each groupID
 
-    :param data_inv_types: mapping if groupIDs to groupName data_inv_types
+    :param data_inv_types: mapping of groupIDs to groupName data_inv_types
     :param name: file name part
     """
     part_file_path = parts_dir + "/" + name + ".yaml"
