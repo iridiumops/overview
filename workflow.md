@@ -7,7 +7,7 @@
    1) Run `git fetch origin main` inside the repository. Git will fetch new changes from the Github repository for main branch if there are any.
    2) Get latest SDE data via `data/download.bat`. Curl will download latest SDE export files that we need in `csv` format from Fuzzwork into the `data` directory.
 2) Find new type IDs:
-   1) Run `git diff origin/main data\invGroups.csv` to view new inventory group type IDs by comparing newly download SDE data with data fetched from main branch on the Github repository.
+   1) Run `git diff origin/main data/invGroups.csv` to view new inventory group type IDs by comparing newly download SDE data with data fetched from main branch on the Github repository.
    2) Check ingame overview settings for any other newly added inventory group types that aren't yet in the Fuzzwork SDE export. Get their IDs by searching their names on [EVE Ref](https://everef.net/). 
    3) Alternatively open ingame overview settings, view the `All: All` filter and tick all types. On `Misc` tab click `Export Settings`, select only the `All: All` filter and export it to a file under any name you wish. On Windows it will be located in `%USERPROFILE%\Documents\EVE\Overview\`. You can compare the new file with `parts\filter All All.yaml` to find new IDs.
 3) Update the overview filters:
