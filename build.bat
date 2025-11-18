@@ -11,7 +11,7 @@ python src/build.py
 if %ERRORLEVEL% EQU 0 (
    echo Success
 ) else (
-   echo An ERROR occured during build process.
+   echo An ERROR occurred during build process.
 )
 
 pause > nul

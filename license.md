@@ -5,7 +5,7 @@ SPDX-License-Identifier: MIT OR BSD-3-Clause
 Unless specified otherwise, this software and all associated files are available under any of the licenses below:
 
 ### MIT License
-Copyright © 2013-2024, IridiumOps <iridiumops@gmail.com>
+Copyright © 2013-2025, IridiumOps <iridiumops@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -15,7 +15,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ### BSD 3-Clause License
 
-Copyright © 2013-2024, IridiumOps <iridiumops@gmail.com>
+Copyright © 2013-2025, IridiumOps <iridiumops@gmail.com>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
