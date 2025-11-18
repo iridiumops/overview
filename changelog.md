@@ -2,6 +2,18 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.7.0 (2025/11/18)
+
+Catalyst Expansion - EVE 23.02
+
+```
++ Added Ships: Expedition Command Ship
++ Added NPCs: Vanguard Entities, Industrial Command Ship, Irregular Expedition Command Ship
++ Added mining deployable: Mobile Phase Anchor
++ Added belts: Managed Asteroid Belt, Ice Belt, Phased Asteroid Field, Rare Asteroid Field, Ore Deposit
++ Added asteroids: Phased Asteroids
+```
+
 ## v3.6.1 (2025/04/16)
 
 Revenant Expansion - EVE 22.02
