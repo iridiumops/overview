@@ -25,7 +25,7 @@ States:
 Standard bracket filter, controls what is visible in space.
 
 ### / Brackets: Combat (+drones)
-Variation with drones and fighters. In many situations such as large scale fights, drones are irrelevant and their rendering can significantly hinder performance. However in smaller engagements drones can play crucial role and thus their visibility in space is needed.
+Variation with drones and fighters. In many situations such as large scale fights, drones are irrelevant and their rendering can significantly hinder performance. However in smaller engagements drones can play a crucial role and thus their visibility in space is needed.
 
 ### / Brackets: Combat (-wrecks)
 Variation without wrecks. While wrecks are typically useful to display in PVE situations and can be used as tactical warp-in points in PVP engagements, in larger quantities they can be seen as distracting clutter. Users of the CTRL+Drag&Select feature might prefer this bracket filter to avoid targeting wrecks when using it.
@@ -87,7 +87,7 @@ Fighters that belong to entities with neutral or negative standing.
 All NPC ships and other NPC entities including turrets.
 
 ### ❖ Ships: Friendly
-Ships of players with positive standing, including corporation and alliance members.
+Ships of players with positive standing, including a corporation and alliance members.
 
 ### ❖ Ships: Fleet
 Player ships that are part of your fleet regardless of standings. Useful mainly for logistics pilots who prefer it to watchlist or NPSI fleets as well.

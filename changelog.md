@@ -2,6 +2,14 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.7.1 (2025/12/11)
+
+Winter Nexus - EVE 23.02
+
+```
++ Added Event NPCs: InterBus Yoiul LADs, Irregular Capital Industrial Ship
+```
+
 ## v3.7.0 (2025/11/18)
 
 Catalyst Expansion - EVE 23.02

@@ -46,7 +46,7 @@
       4) Run `git commit -m "MESSAGE"` where message is short description of what changed.
       5) Run `git tag v1.0.0`  where 1.0.0 is the new version number to apply the tag to the last commit.
       6) Run `git rebase`  in case there are diverging changes between your local repository and Github repository. This will merge changes from last commit on the end of main branch.
-      7) Run `git push origin main --dry-run` to to confirm that there are no conflicts.
+      7) Run `git push origin main --dry-run` to confirm that there are no conflicts.
       8) Run `git push origin main `  to update Github repository.
       9) Run `git push origin --tags` to update tags in the Github repository.
       10) On Github create a new release. Select the added tag. Write release description or copy information from changelog, select individual YAML files from for the release or upload a zip containing them all. Set the release as latest.
