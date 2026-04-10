@@ -1,8 +1,8 @@
 # YAML files
 
-Instead of having one large unwieldy YAML file, Iridium Overview is split into individual parts, allowing to easily generate alternative versions with different sets of filters or tab settings variations.
+Instead of having one large unwieldy YAML file, Iridium Overview is split into individual modular parts, allowing them to be combined into filters and easily generate alternative versions with different sets of filters or tab settings variations.
 
-During the build process, filter files get updated with data from SDE in form of comment labels, however all YAML comments are stripped from final YAML file.
+During the build process, part files get updated with data from SDE in form of comment labels, however all YAML comments are stripped from final YAML file as they are not supported by the game.
 
 ## Filter Naming
 Filters are grouped into categories based on intended use-case via common first character (symbol).
@@ -31,17 +31,17 @@ Variation with drones and fighters. In many situations such as large scale fight
 Variation without wrecks. While wrecks are typically useful to display in PVE situations and can be used as tactical warp-in points in PVP engagements, in larger quantities they can be seen as distracting clutter. Users of the CTRL+Drag&Select feature might prefer this bracket filter to avoid targeting wrecks when using it.
 
 ### ? DSCAN: Ships
-Strictly defensive Dscan filter intended to warn you about ships and ships only.
+Strictly defensive Dscan filter intended to warn you about player ships and only about ships, nothing else.
 
 ### ? DSCAN: Basic
-Standard multipurpose dscan filter, intended both for defense (displaying potentially dangerous objects like ships, combat probes and warp disruption bubbles) and offence (enabling to quickly locate targets).
+Standard multipurpose dscan filter, intended both for defense (displaying potentially dangerous objects like ships, combat probes and warp disruption bubbles) and offense (enabling to quickly locate targets).
 
 ### ? DSCAN: Extra
 
 Dscan filter with expanded list of displayed objects. Intended for reconnaissance in wormholes, hunting specific targets (such as Combat Recons which themselves are immune to Dscan but secondary evidence such as wreck accumulation can be observed), etc.
 
 ### ⌘ All: All
-Displays all objects and all states. Intended for situations that require finding obscure mission objectives or navigating while cloaked.
+Displays all objects and all states. Intended for situations that require finding obscure mission objectives or navigating on grid while cloaked.
 
 ### ✪ System: System
 Standard navigation filter. Displays warpable objects beyond current grid.
@@ -69,7 +69,7 @@ Note: This is deprecated legacy filter; multiple overview window support allevia
 ### ➔ Warp: Travel (-citadels)
 Variation without citadels. Due to extreme Upwell structure spam in some areas such as The Citadel region around the system of Jita or near Goonswarm staging in Delve.
 
-Note: This is deprecated legacy filter; multiple overview window support alleviates the need for this. Furthermore, Upwell structure spam is significantly less of a problem than it used to be.
+Note: This is deprecated legacy filter. Multiple overview window support alleviates the need for this. Furthermore, Upwell structure spam is significantly less of a problem than it used to be.
 
 ### ❒ Loot: Loot and salvage
 Containers, wrecks and common openable or destructible mission objects.

@@ -1,0 +1,101 @@
+- 6 # Sun
+- 7 # Planet
+- 8 # Moon
+- 9 # Asteroid Belt
+- 10 # Stargate
+- 12 # Cargo Container
+- 15 # Station
+- 29 # Capsule
+- 90 # Bomb
+- 99 # Sentry Gun
+- 180 # Protective Sentry Gun
+- 182 # Police Drone
+- 288 # Faction Drone
+- 301 # Concord Drone
+- 306 # Spawn Container
+- 310 # Beacon
+- 318 # Landmark
+- 319 # Large Collidable Structure
+- 323 # Billboard
+- 336 # Mobile Sentry Gun
+- 340 # Secure Cargo Container
+- 361 # Mobile Warp Disruptor
+- 365 # Control Tower
+- 366 # Warp Gate
+- 383 # Destructible Sentry Gun
+- 411 # Force Field
+- 441 # Stasis Webification Battery
+- 443 # Warp Scrambling Battery
+- 446 # Customs Official
+- 448 # Audit Log Secure Container
+- 479 # Scanner Probe
+- 495 # Deadspace Overseer's Sentry
+- 496 # Deadspace Overseer's Belongings
+- 517 # Agents in Space
+- 548 # Interdiction Probe
+- 649 # Freight Container
+- 707 # Jump Portal Array
+- 711 # Harvestable Cloud
+- 784 # Large Collidable Ship
+- 863 # Bomb ECM
+- 864 # Bomb Energy
+- 897 # Covert Cynosural Field
+- 920 # Effect Beacon
+- 922 # Capture Point
+- 925 # FW Infrastructure Hub
+- 952 # Mission Container
+- 988 # Wormhole
+- 1003 # Territorial Claim Unit
+- 1005 # Sovereignty Blockade Unit
+- 1012 # Sovereignty Hub
+- 1025 # Orbital Infrastructure
+- 1106 # Orbital Construction Platform
+- 1149 # Mobile Jump Disruptor
+- 1207 # Scatter Container
+- 1246 # Mobile Depot
+- 1249 # Mobile Cyno Inhibitor
+- 1250 # Mobile Tractor Unit
+- 1273 # Encounter Surveillance System
+- 1275 # Mobile Scan Inhibitor
+- 1276 # Mobile Micro Jump Unit
+- 1316 # Entosis Command Node
+- 1404 # Engineering Complex
+- 1406 # Refinery
+- 1408 # Upwell Jump Gate
+- 1548 # Guided Bomb
+- 1657 # Citadel
+- 1704 # Super Weapon Beacon
+- 1915 # Moon Mining Beacon
+- 1928 # Irregular Container
+- 1978 # Industrial Support Facility
+- 1981 # Triglavian Support Pylons
+- 1991 # Filament Trace
+- 2015 # Upwell Monument
+- 2016 # Upwell Cyno Jammer
+- 2017 # Upwell Cyno Beacon
+- 2020 # Cynosural Fields
+- 4033 # Destructible Effect Beacon
+- 4070 # Exotic Artefact
+- 4073 # Temporary Collidable Structure
+- 4079 # Encounter Surveillance System
+- 4081 # Disrupted Gate
+- 4088 # Interdiction Burst Probes
+- 4093 # Mobile Cynosural Beacon
+- 4107 # Mobile Observatory
+- 4137 # Mobile Analysis Beacon
+- 4477 # FW Propaganda Broadcast Structure
+- 4494 # Control Point
+- 4499 # FW Listening Outpost
+- 4547 # Interstellar Shipcaster Beacon
+- 4548 # Shipcaster Beacon Constructor
+- 4549 # Interstellar Shipcaster
+- 4644 # Pirate Forward Operating Base
+- 4713 # Guidance Objectives
+- 4719 # Rift
+- 4736 # Skyhook
+- 4744 # Upwell Moon Drill
+- 4745 # Skyhook Reagent Silo
+- 4810 # Mercenary Den
+- 4825 # Local Beacon
+- 4828 # Pirate Spawners
+- 4913 # Mobile Phase Anchor

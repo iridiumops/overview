@@ -1,5 +1,6 @@
 # env folders
 .idea/
+.vscode/
 .git/
 
 # temp files and binaries

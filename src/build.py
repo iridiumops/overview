@@ -1,7 +1,8 @@
 # import libs
-import os, yaml, re, shutil
+import os, yaml, re, shutil, glob
 import pandas as pd
 from datetime import date, datetime
+from pathlib import Path
 from pprint import pprint
 
 temp_dir = "./temp"
@@ -17,46 +18,184 @@ parts_dir = "./parts"
 # list of all parts and corresponding names of yaml files
 parts = {
     "general": "general",
-    "filters": [
-        "Brackets Combat",
-        "Brackets Combat (+drones)",
-        "Brackets Combat (-wrecks)",
-        "DSCAN Ships",
-        "DSCAN Basic",
-        "DSCAN Extra",
-        "All All",
-        "System System",
-        "System System (-citadels)",
-        "System System (+belts)",
-        "System Mining",
-        "System Beacons",
-        "Warp Warp out!",
-        "Warp Travel (-citadels)",
-        "Warp Travel",
-        "Loot Loot and salvage",
-        "Drones Drones and Fighters (all)",
-        "Drones Drones and Fighters (red+neutral)",
-        "Drones Fighters (red+neutral)",
-        "Ships NPCs (+turrets)",
-        "Ships Friendly",
-        "Ships Fleet",
-        "Ships Enemy All (red)",
-        "Ships Enemy All (red -capsules)",
-        "Ships Enemy All (red+neutral)",
-        "Ships Enemy All (red+neutral -capsules)",
-        "Ships Enemy All (war targets)",
-        "Ships Enemy All (hisec criminals)",
-        "Ships Enemy Logi (red+neutral)",
-        "Ships Enemy Utility (red+neutral)",
-        "Ships Enemy Capitals (red+neutral)",
-        "Main PVX (+friendly +extra)",
-        "Main PVX (+extra)",
-        "Main PVX",
-        "Main PVX (-npc)",
-        "Main PVX (+mining)",
-        "Main System & PVX (+extra)",
-        "Main System & PVX (-npc)",
-    ],
+    "filters": {
+        "filter Brackets Combat": [
+            "part ships", 
+            "part wrecks", 
+            "part npcs", 
+            "part brackets"
+        ],
+        "filter Brackets Combat (+drones)": [
+            "part ships", 
+            "part drones", 
+            "part fighters", 
+            "part wrecks", 
+            "part npcs", 
+            "part brackets"
+        ],
+        "filter Brackets Combat (-wrecks)": [
+            "part ships", 
+            "part npcs", 
+            "part brackets"
+        ],
+        "filter DSCAN Ships": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter DSCAN Basic": [
+            "part dscan basic", 
+            "part ships", 
+            "part capsule"
+        ],
+        "filter DSCAN Extra": [
+            "part dscan extra", 
+            "part dscan basic", 
+            "part ships", 
+            "part capsule"
+        ],
+        "filter All All": [
+            "part all"
+        ],
+        "filter System System": [
+            "part system", 
+            "part structures", 
+            "part citadels"
+        ],
+        "filter System System (-citadels)": [
+            "part system"
+        ],
+        "filter System System (+belts)": [
+            "part system", 
+            "part structures", 
+            "part citadels", 
+            "part belts"
+        ],
+        "filter System Mining": [
+            "part belts", 
+            "part mining"
+        ],
+        "filter System Beacons": [
+            "part beacons"
+        ],
+        "filter Warp Warp out!": [
+            "part warp"
+        ],
+        "filter Warp Travel (-citadels)": [
+            "part travel"
+        ],
+        "filter Warp Travel": [
+            "part citadels", 
+            "part travel"
+        ],
+        "filter Loot Loot and salvage": [
+            "part loot"
+        ],
+        "filter Drones Drones and Fighters (all)": [
+            "part drones", 
+            "part fighters"
+        ],
+        "filter Drones Drones and Fighters (red+neutral)": [
+            "part drones", 
+            "part fighters"
+        ],
+        "filter Drones Fighters (red+neutral)": [
+            "part fighters"
+        ],
+        "filter Ships NPCs (+turrets)": [
+            "part npcs", 
+            "part police", 
+            "part turrets"
+        ],
+        "filter Ships Friendly": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter Ships Fleet": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter Ships Enemy All (red)": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter Ships Enemy All (red -capsules)": [
+            "part ships"
+        ],
+        "filter Ships Enemy All (red+neutral)": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter Ships Enemy All (red+neutral -capsules)": [
+            "part ships"
+        ],
+        "filter Ships Enemy All (war targets)": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter Ships Enemy All (hisec criminals)": [
+            "part ships", 
+            "part capsule"
+        ],
+        "filter Ships Enemy Logi (red+neutral)": [
+            "part ships logi"
+        ],
+        "filter Ships Enemy Utility (red+neutral)": [
+            "part ships utility"
+        ],
+        "filter Ships Enemy Capitals (red+neutral)": [
+            "part ships capitals"
+        ],
+        "filter Main PVX (+friendly +extra)": [
+            "part npcs", 
+            "part main pvx", 
+            "part main extra", 
+            "part capsule", 
+            "part ships"
+        ],
+        "filter Main PVX (+extra)": [
+            "part npcs", 
+            "part main pvx", 
+            "part main extra", 
+            "part capsule", 
+            "part ships"
+        ],
+        "filter Main PVX": [
+            "part npcs", 
+            "part main pvx", 
+            "part capsule", 
+            "part ships"
+        ],
+        "filter Main PVX (-npc)": [
+            "part main pvx", 
+            "part capsule", 
+            "part ships"
+        ],
+        "filter Main PVX (+mining)": [
+            "part npcs", 
+            "part main pvx", 
+            "part capsule", 
+            "part ships", 
+            "part mining"
+        ],
+        "filter Main System & PVX (+extra)": [
+            "part npcs", 
+            "part main pvx", 
+            "part main extra", 
+            "part capsule", 
+            "part ships", 
+            "part structures", 
+            "part citadels", 
+            "part system"
+        ],
+        "filter Main System & PVX (-npc)": [
+            "part main pvx", 
+            "part capsule", 
+            "part ships", 
+            "part structures", 
+            "part citadels", 
+            "part system"
+        ]
+    },
     "labels": "labels",
     "states": "states",
     "tabs": {
@@ -68,75 +207,37 @@ parts = {
 }
 
 
-def yaml_append(yaml_content, name):
+def yaml_load_part(file_name):
     """
-    Load yaml from file and add it to the end of yaml document
+    Load content of yaml file that is located in parts directory
 
     :param yaml_content: yaml document object
     :param name: file name part
     """
-    part_file_path = parts_dir + "/" + name + ".yaml"
+    part_file_path = parts_dir + "/" + file_name + ".yaml"
     with open(part_file_path, 'r', encoding="utf8") as part_file:
-        part_content = yaml.safe_load(part_file)
-        yaml_content.update(part_content)
-
-
-def yaml_add_filter(yaml_content, name):
-    """
-    Load filter from yaml file and add it to filters inside yaml document
-
-    :param yaml_content: yaml document object
-    :param name: file name part
-    """
-    part_file_path = parts_dir + "/" + name + ".yaml"
-    with open(part_file_path, 'r', encoding="utf8") as part_file:
-        part_content = yaml.safe_load(part_file)
-        yaml_content["presets"].extend(part_content)
-
-
-def yaml_sort_section(data):
-    """
-    Sort groupIDs numerically in ascending order
-
-    :param data: yaml document object
-    """
-    if isinstance(data, dict):
-        for key, value in data.items():
-            yaml_sort_section(value)
-    elif isinstance(data, list):
-        for item in data:
-            if item == "groups":
-                data[1] = sorted(data[1])
-            yaml_sort_section(item)
-    else:
-        pass
-
+        return yaml.safe_load(part_file)
+    
 
 def yaml_comment(data_inv_types, name):
     """
-    Add groupName (string description) as yaml comment for each groupID
+    Add groupName (descriptive string name) as yaml comment for each groupID number
 
     :param data_inv_types: mapping of groupIDs to groupName data_inv_types
     :param name: file name part
     """
     part_file_path = parts_dir + "/" + name + ".yaml"
     part_file_path_temp = temp_dir + "/" + name + ".yaml"
-    group_start_found = False
 
     # append group names for IDs, write to temp file
     with open(part_file_path, 'r', encoding="utf8") as in_file, open(part_file_path_temp, 'w', encoding="utf8") as out_file:
         for line in in_file:
-            if group_start_found:
-                match_id = re.search(r' - (\d+)', line)
-                match_comment = re.search(r' # ', line)
-                if match_id and not match_comment:
-                    group_id = int(match_id.group(1))
-                    if group_id in data_inv_types:
-                        line = line.rstrip() + ' # ' + data_inv_types[group_id] + '\n'
-            else:
-                match_groups = re.search(r' - groups', line)
-                if match_groups:
-                    group_start_found = True
+            match_id = re.search(r'- (\d+)', line)
+            match_comment = re.search(r' # ', line)
+            if match_id and not match_comment:
+                group_id = int(match_id.group(1))
+                if group_id in data_inv_types:
+                    line = line.rstrip() + ' # ' + data_inv_types[group_id] + '\n'
 
             out_file.write(line)
 
@@ -154,24 +255,38 @@ if __name__ == '__main__':
     data_inv_types = pd.read_csv('./data/invGroups.csv', sep=",", header=0, usecols=[0, 2], index_col=[0])
     data_inv_types = data_inv_types.to_dict()["groupName"]
 
+    # optional step, adds comments to part files with groupNames for GroupIDs
+    for filter_file_path in glob.glob(parts_dir + "/part*.yaml"):
+        yaml_comment(data_inv_types, Path(filter_file_path).stem)
+
     # build yaml file(s)
     print("Generating all files...")
     for tab_type, tab_file in parts["tabs"].items():
         yaml_content = {}
 
-        # combine yaml parts
-        yaml_append(yaml_content, parts["general"])
-        for filter in parts["filters"]:                      # add all filters defined in parts["filters"]
-            filter_name = "filter " + filter
-            yaml_comment(data_inv_types, filter_name)        # optional step, adds comments to part files with groupNames for GroupIDs
-            yaml_add_filter(yaml_content, filter_name)
-        yaml_append(yaml_content, parts["labels"])
-        yaml_append(yaml_content, parts["states"])
-        yaml_append(yaml_content, parts["tabs"][tab_type])
-        yaml_append(yaml_content, parts["user"])
+        # combine yaml parts, starting with general
+        yaml_content = yaml_load_part(parts["general"])
+        
+        # add all filters defined in parts["filters"]
+        for filter_name, filter_parts in parts["filters"].items():                      
 
-        # sort group IDs
-        yaml_sort_section(yaml_content)
+            # get filter
+            filter_content = yaml_load_part(filter_name)
+
+            # build combined GroupIDs list for filter from parts
+            filter_groups = []
+            for part_name in filter_parts:
+                part_content = yaml_load_part(part_name)
+                filter_groups = sorted(list(set(filter_groups + part_content)))
+            filter_content[0][1].append(["groups", filter_groups])
+
+            # add filter to presets
+            yaml_content["presets"].extend(filter_content)
+
+        yaml_content.update(yaml_load_part(parts["labels"]))
+        yaml_content.update(yaml_load_part(parts["states"]))
+        yaml_content.update(yaml_load_part(parts["tabs"][tab_type]))
+        yaml_content.update(yaml_load_part(parts["user"]))
 
         # save to file
         output_path = output_dir + "/iridium_overview_" + date_now + "-" + time_now + "_" + tab_type + ".yaml"
