@@ -4,12 +4,8 @@
 .git/
 
 # temp files and binaries
-bin/
 temp/
 output/
-
-# libraries and tools
-tools/
 
 # tests
 tests/

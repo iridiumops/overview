@@ -1,5 +1,5 @@
 # import libs
-import os, yaml, re, shutil, glob
+import os, yaml, re, shutil, glob, requests
 import pandas as pd
 from datetime import date, datetime
 from pathlib import Path
@@ -219,11 +219,10 @@ def yaml_load_part(file_name):
         return yaml.safe_load(part_file)
     
 
-def yaml_comment(data_inv_types, name):
+def yaml_comment(name):
     """
     Add groupName (descriptive string name) as yaml comment for each groupID number
 
-    :param data_inv_types: mapping of groupIDs to groupName data_inv_types
     :param name: file name part
     """
     part_file_path = parts_dir + "/" + name + ".yaml"
@@ -236,8 +235,12 @@ def yaml_comment(data_inv_types, name):
             match_comment = re.search(r' # ', line)
             if match_id and not match_comment:
                 group_id = int(match_id.group(1))
-                if group_id in data_inv_types:
-                    line = line.rstrip() + ' # ' + data_inv_types[group_id] + '\n'
+
+                # fetch group name from api
+                group_name = api_get_name_for_group_id(group_id)
+
+                if group_name:
+                    line = line.rstrip() + ' # ' + group_name + '\n'
 
             out_file.write(line)
 
@@ -246,18 +249,30 @@ def yaml_comment(data_inv_types, name):
     shutil.move(part_file_path_temp, part_file_path)
 
 
+def api_get_name_for_group_id(group_id: int):
+    """
+    Tries to fetch descriptive string name for given groupID from ESI API.
+    
+    :param group_id: Int ID
+    :returns: The group name string if found, None otherwise.
+    """
+    api_url = f"https://esi.evetech.net/universe/groups/{group_id}/"
+    
+    try:
+        response = requests.get(api_url, timeout=5)
+        response.raise_for_status()
+        if response.status_code == 200:
+            data = response.json()
+            return data.get("name")
+    except:
+        return None
+        
+    return None
+
 if __name__ == '__main__':
-    # set vars
-    date_now = date.today().strftime("%Y%m%d")
-    time_now = datetime.now().strftime("%H%M%S")
-
-    # load groupIDs and corresponding groupNames from SDE csv
-    data_inv_types = pd.read_csv('./data/invGroups.csv', sep=",", header=0, usecols=[0, 2], index_col=[0])
-    data_inv_types = data_inv_types.to_dict()["groupName"]
-
     # optional step, adds comments to part files with groupNames for GroupIDs
     for filter_file_path in glob.glob(parts_dir + "/part*.yaml"):
-        yaml_comment(data_inv_types, Path(filter_file_path).stem)
+        yaml_comment(Path(filter_file_path).stem)
 
     # build yaml file(s)
     print("Generating all files...")
@@ -289,6 +304,8 @@ if __name__ == '__main__':
         yaml_content.update(yaml_load_part(parts["user"]))
 
         # save to file
+        date_now = date.today().strftime("%Y%m%d")
+        time_now = datetime.now().strftime("%H%M%S")
         output_path = output_dir + "/iridium_overview_" + date_now + "-" + time_now + "_" + tab_type + ".yaml"
         with open(output_path, 'w', encoding="utf8") as outfile:
             yaml.safe_dump(yaml_content, outfile, sort_keys=False, encoding="utf8", allow_unicode=True)
