@@ -1,6 +1,5 @@
 # import libs
 import os, yaml, re, shutil, glob, requests
-import pandas as pd
 from datetime import date, datetime
 from pathlib import Path
 from pprint import pprint
