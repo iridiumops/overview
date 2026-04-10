@@ -11,8 +11,5 @@ __pycache__/
 # tests
 tests/
 
-# other
-assets/
-
 # files
 .empty

@@ -14,10 +14,10 @@ Simple yet powerful EVE Online overview pack for everyone, every situation and a
 
 ### Install from ingame channel
 
-![Install guide](https://i.imgur.com/zGVtzh3.png)
+![Install guide](assets/guides/overview-install-steps.jpg)
 
 - Join ingame channel `Iridium Overview` 
-- Reset your overview settings and close the window. [How to reset](imgur.com/a/2EtPh0J) (recommended)
+- Reset your overview settings and close the window. [How to reset](assets/guides/reset-guide.jpg) (recommended)
 - Click all install links
 - Install any modifications to the base pack (optional)
 - Log out and log back in (recommended)
@@ -52,7 +52,7 @@ Feel free to send any feedback, thoughts and ideas.
 
 ## Gallery
 
-![Iridium Overview v3.1.0](https://i.imgur.com/aSXYzO9.jpeg)
-![Iridium Overview v3.0.0](https://i.imgur.com/tcQ2GNz.png)
-![Common Layouts](https://i.imgur.com/pRjeJvw.png)
-![Other Layouts](https://i.imgur.com/aSXYzO9.jpeg)
+![Iridium Overview v3.1.0](assets/screenshots/Version-3.1-adds-new-filters-more-tabs-and-features.jpg)
+![Iridium Overview v3.0.0](assets/screenshots/Version-3.0-for-Photon-UI-with-multi-window-support.jpg)
+![Common Layouts](assets/screenshots/Common-multi-window-layouts-1.jpg)
+![Other Layouts](assets/screenshots/Common-multi-window-layouts-2.jpg)
