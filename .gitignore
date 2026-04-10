@@ -6,6 +6,7 @@
 # temp files and binaries
 temp/
 output/
+__pycache__/
 
 # tests
 tests/
