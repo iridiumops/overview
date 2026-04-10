@@ -8,6 +8,7 @@ Simple yet powerful EVE Online overview pack for everyone, every situation and a
 - 3 bracket filters
 - 3 dscan filters
 - standard color-coding
+- readable ship labels
 
 ## Just try it!
 
