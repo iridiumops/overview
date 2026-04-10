@@ -1,6 +1,6 @@
 # YAML files
 
-Instead of having one large unwieldy YAML file, Iridium Overview is split into individual modular parts, allowing them to be combined into filters and easily generate alternative versions with different sets of filters or tab settings variations.
+Instead of having one large unwieldy YAML file, Iridium Overview uses modular design. Filters are build from semantic sub-parts and then combined into various alternative versions with different settings.
 
 During the build process, part files get updated with data from SDE in form of comment labels, however all YAML comments are stripped from final YAML file as they are not supported by the game.
 

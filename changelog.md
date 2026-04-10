@@ -2,6 +2,19 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.8.0 (2026/04/10)
+
+Catalyst Major Update - EVE 23.02
+
+```
++ Added Ships: Yachts
++ Added NPCs: FW Haulers, Capsuleer Outreach Center Entities, Fabricator Rogue Drones
+* Various minor tweaks
+* Fixed inconsistencies in combined filters
+* Fixed incorrectly included drone entities from drone filter
+* Cleaned legacy entities
+```
+
 ## v3.7.1 (2025/12/11)
 
 Winter Nexus - EVE 23.02
