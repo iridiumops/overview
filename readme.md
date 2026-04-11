@@ -34,7 +34,7 @@ Simple yet powerful EVE Online overview pack for everyone, every situation and a
 
 ## For developers
 
-- This project is open source as under MIT or BSD-3-Clause, see [License](license.md) for details. 
+- This project is open source under the MIT or BSD-3-Clause license, see [License](license.md) for details. 
 - See [Setup and Workflow](workflow.md)
 - Feel free to contribute or fork!
 
