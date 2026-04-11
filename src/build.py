@@ -2,11 +2,15 @@
 import os, yaml, re, shutil, glob, requests
 from datetime import date, datetime
 from pathlib import Path
+from joblib import Memory
 from pprint import pprint
 
 temp_dir = "./temp"
 if not os.path.exists(temp_dir):
     os.makedirs(temp_dir)
+
+cache_location = temp_dir + "/cache"
+cache_memory = Memory(cache_location, verbose=0)
 
 output_dir = "./output"
 if not os.path.exists(output_dir):
@@ -248,6 +252,7 @@ def yaml_comment(name):
     shutil.move(part_file_path_temp, part_file_path)
 
 
+@cache_memory.cache
 def api_get_name_for_group_id(group_id: int):
     """
     Tries to fetch descriptive string name for given groupID from ESI API.
@@ -267,6 +272,7 @@ def api_get_name_for_group_id(group_id: int):
         return None
         
     return None
+
 
 if __name__ == '__main__':
     # optional step, adds comments to part files with groupNames for GroupIDs
