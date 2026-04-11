@@ -2,6 +2,14 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.8.1 (2026/04/10)
+
+Catalyst Major Update - EVE 23.02
+
+```
+* Bugfix: added missing types to the "all" filter
+```
+
 ## v3.8.0 (2026/04/10)
 
 Catalyst Major Update - EVE 23.02
