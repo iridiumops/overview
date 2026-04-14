@@ -1,27 +1,19 @@
 # import libs
-import os, yaml, re, shutil, glob, requests
+import glob
 from datetime import date, datetime
 from pathlib import Path
-from joblib import Memory
 from pprint import pprint
+from utils import yaml_load_part, yaml_save_to_output, yaml_comment
+from dir_paths import *
 
-temp_dir = "./temp"
-if not os.path.exists(temp_dir):
-    os.makedirs(temp_dir)
-
-cache_location = temp_dir + "/cache"
-cache_memory = Memory(cache_location, verbose=0)
-
-output_dir = "./output"
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
-
-parts_dir = "./parts"
-
-# list of all parts and corresponding names of yaml files
+# dict of all parts/sections of the final YAML config file and corresponding names of yaml files representing those modular pieces
 parts = {
+    # general section (mostly legacy definitions and common default settings)
     "general": "general",
+    # list of filters/presets
     "filters": {
+        # each filter is represented by a YAML file.
+        # each filter has a list of YAML part files that contain group type ids for that filter
         "filter Brackets Combat": [
             "part ships", 
             "part wrecks", 
@@ -199,79 +191,19 @@ parts = {
             "part system"
         ]
     },
+    # ship and bracket label configuration
     "labels": "labels",
+    # visual representation for different states
     "states": "states",
+    # tab settings, multiple variations
     "tabs": {
         "carbon": "tabs carbon",
         "icons": "tabs icons",
         "main": "tabs main"
     },
+    # other user settings (empty)
     "user": "user"
 }
-
-
-def yaml_load_part(file_name):
-    """
-    Load content of yaml file that is located in parts directory
-
-    :param yaml_content: yaml document object
-    :param name: file name part
-    """
-    part_file_path = parts_dir + "/" + file_name + ".yaml"
-    with open(part_file_path, 'r', encoding="utf8") as part_file:
-        return yaml.safe_load(part_file)
-    
-
-def yaml_comment(name):
-    """
-    Add groupName (descriptive string name) as yaml comment for each groupID number
-
-    :param name: file name part
-    """
-    part_file_path = parts_dir + "/" + name + ".yaml"
-    part_file_path_temp = temp_dir + "/" + name + ".yaml"
-
-    # append group names for IDs, write to temp file
-    with open(part_file_path, 'r', encoding="utf8") as in_file, open(part_file_path_temp, 'w', encoding="utf8") as out_file:
-        for line in in_file:
-            match_id = re.search(r'- (\d+)', line)
-            match_comment = re.search(r' # ', line)
-            if match_id and not match_comment:
-                group_id = int(match_id.group(1))
-
-                # fetch group name from api
-                group_name = api_get_name_for_group_id(group_id)
-
-                if group_name:
-                    line = line.rstrip() + ' # ' + group_name + '\n'
-
-            out_file.write(line)
-
-    # replace old file
-    os.remove(part_file_path)
-    shutil.move(part_file_path_temp, part_file_path)
-
-
-@cache_memory.cache
-def api_get_name_for_group_id(group_id: int):
-    """
-    Tries to fetch descriptive string name for given groupID from ESI API.
-    
-    :param group_id: Int ID
-    :returns: The group name string if found, None otherwise.
-    """
-    api_url = f"https://esi.evetech.net/universe/groups/{group_id}/"
-    
-    try:
-        response = requests.get(api_url, timeout=5)
-        response.raise_for_status()
-        if response.status_code == 200:
-            data = response.json()
-            return data.get("name")
-    except:
-        return None
-        
-    return None
 
 
 if __name__ == '__main__':
@@ -282,8 +214,6 @@ if __name__ == '__main__':
     # build yaml file(s)
     print("Generating all files...")
     for tab_type, tab_file in parts["tabs"].items():
-        yaml_content = {}
-
         # combine yaml parts, starting with general
         yaml_content = yaml_load_part(parts["general"])
         
@@ -311,9 +241,8 @@ if __name__ == '__main__':
         # save to file
         date_now = date.today().strftime("%Y%m%d")
         time_now = datetime.now().strftime("%H%M%S")
-        output_path = output_dir + "/iridium_overview_" + date_now + "-" + time_now + "_" + tab_type + ".yaml"
-        with open(output_path, 'w', encoding="utf8") as outfile:
-            yaml.safe_dump(yaml_content, outfile, sort_keys=False, encoding="utf8", allow_unicode=True)
-            print(" - saved to file: " + output_path)
+        output_name = "iridium_overview_" + date_now + "-" + time_now + "_" + tab_type + ".yaml"
+        out = yaml_save_to_output(yaml_content, output_name)
+        print(" - saved to file: " + out)
 
     print("Done")

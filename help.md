@@ -29,7 +29,7 @@ A: The amount of things in space would be often overwhelming, which is why preco
 
 **Q: What is Iridium Overview?**
 
-A: Iridium Overview is a player-made overview pack for EVE Online that provides a pre-configured set of 12 tabs, 38 overview presets, 3 bracket presets, and 3 d-scan presets. It's designed for every EVE player, whether newbie or veteran, and is useful for fleet and solo PvP, ratting, mining, looting, exploration, and all types of space.
+A: Iridium Overview is a player-made overview pack for EVE Online that provides a pre-configured set of 12 tabs, 38 overview presets, 3 bracket presets, and 3 d-scan presets which is the perfect balance between large complicated and too simplistic overview packs. Alternative filters provide easy yet powerful customization for your play-style. It's designed for every EVE player, whether newbie or veteran, and is useful for fleet and solo PvP, ratting, mining, looting, exploration, and all types of space.
 
 **Q: What are brackets?**
 

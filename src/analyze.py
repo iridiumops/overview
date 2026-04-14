@@ -1,8 +1,9 @@
 # import libs
-import os, sys, yaml
 from pprint import pprint
 from argparse import ArgumentParser
-from build import yaml_load_part, api_get_name_for_group_id
+from api import api_get_group
+from utils import yaml_load_part, yaml_get_all_unique_group_ids
+
 
 if __name__ == '__main__':
     # Create arg parser
@@ -15,20 +16,10 @@ if __name__ == '__main__':
     # Get known old IDs
     old_ids = set(yaml_load_part("part all"))
 
-    # Load provided YAML
+    # Load provided YAML file and extract all groupIDs
     print("Analyzing file for new IDs..")
-    if not os.path.isfile(args.file):
-        print("Provided path is invalid")
-        sys.exit()
-
-    with open(args.file, 'r', encoding="utf8") as yaml_file:
-        new_yaml = yaml.safe_load(yaml_file)
-
-    # Extract all groupIDs from YAML file
-    current_ids = set()
-    for filter in new_yaml["presets"]:
-        current_ids.update(filter[1][2][1])
-
+    current_ids = yaml_get_all_unique_group_ids(args.file)
+    
     # Find differences
     new_ids = sorted(set(current_ids - old_ids))
 
@@ -40,11 +31,11 @@ if __name__ == '__main__':
         pprint(new_ids)
         print()
         print("Fetching names for IDs from api...")
-        for id in new_ids:
-            name = api_get_name_for_group_id(id)
-            if name:
-                print("- "+str(id)+" # "+name)
+        for group_id in new_ids:
+            group = api_get_group(group_id)
+            if group:
+                print("- "+str(group_id)+" # "+group["name"])
             else:
-                print("Failed to fetch name for ID "+str(id))
+                print("Failed to fetch name for ID "+str(group_id))
         print()
         print("Done")
