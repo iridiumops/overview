@@ -9,3 +9,5 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 parts_dir = "./parts"
+
+releases_dir = "./releases"
