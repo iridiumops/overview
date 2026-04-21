@@ -13,7 +13,7 @@ if %ERRORLEVEL% EQU 0 (
 )
 
 echo Creating new conda environment from file...
-call conda env create --name %conda_env% -f environment.yml
+call conda env create --name %conda_env% -f environment.yaml
 
 pause
 goto :eof

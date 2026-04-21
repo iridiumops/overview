@@ -141,6 +141,8 @@ def main():
     new_relevant_group_ids = sorted(filtered_group_ids - set(current_group_ids) - set(ignored_ids))
     removed_relevant_group_ids = sorted(set(current_group_ids) - filtered_group_ids - set(ignored_ids))
 
+    print("\n=== Gathering final results ===")
+    print("Comparing and obtaining info from API... (please wait)")
     print(f"\nFound {len(new_relevant_group_ids)} new candidate groups.")
     new_relevant_groups = {}
     for group_id in sorted(new_relevant_group_ids):

@@ -4,7 +4,7 @@ chcp 65001 > nul
 echo Exporting conda environment to file...
 
 call activate.bat iridium_overview
-call conda env export > environment.yml
+call conda env export > environment.yaml
 
 pause
 goto :eof
