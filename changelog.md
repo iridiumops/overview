@@ -2,6 +2,14 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.9.0 (2026/04/30)
+
+Capsuleer Day XXIII Warpath - EVE 23.02
+
+```
++ Added NPCs: Warpath Elite Mercenaries, Warpath Defenders, Warpath Invaders
+```
+
 ## v3.8.1 (2026/04/10)
 
 Catalyst Major Update - EVE 23.02
