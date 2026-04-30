@@ -5,8 +5,8 @@
 .pytest_cache/
 
 # temp files and binaries
-temp/
-output/
+/temp/
+/output/
 __pycache__/
 
 # tests

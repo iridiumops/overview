@@ -6,13 +6,13 @@
 1) Find new group type IDs:
    1) Ingame in the overview settings update or create any filter to include all possible types. For example use the `All: All` filter, tick all types and save it.
    2) On `Misc` tab click `Export Settings`, make sure this filter is ticked and export it to a file under any name you wish. On Windows it will be located in `%USERPROFILE%\Documents\EVE\Overview\`.
-   3) Run the `analyze.bat` script and provide path to this exported YAML file, it will call `src/analyze.py` and analyze differences and fetch data from API.
+   3) Run the `scripts/analyze.bat` script and provide path to this exported YAML file, it will call `src/analyze.py` and analyze differences and fetch data from API.
    4) Read the results, which will contain all new group type IDs and their respective names.
 2) Update the overview filters:
    1) Modify or update YAML files in `parts` directory to your liking with the new IDs.
    2) Optionally update the Python build script `src/build.py` if other changes are needed.
 3) Generate YAML files:
-   1) Run `build.bat` to build YAML files from parts. It will call `src/build.py` and generate new YAML files in the `output` directory, ready to be imported ingame.
+   1) Run `scripts/build.bat` to build YAML files from parts. It will call `src/build.py` and generate new YAML files in the `output` directory, ready to be imported ingame.
    2) Import generated YAML files into EVE Online.
       1) Copy the newly generated YAML files from `output` directory to `%USERPROFILE%\Documents\EVE\Overview\` 
       2) Open ingame overview settings, on the `Misc` tab click `Reset All Settings` then click `Import Settings`, select desired file from the list, tick `Check All` and click `Import` to load it.

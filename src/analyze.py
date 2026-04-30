@@ -3,7 +3,7 @@ from pprint import pprint
 from argparse import ArgumentParser
 from api import api_get_group
 from utils import yaml_load_part, yaml_get_all_unique_group_ids
-
+from pathlib import Path
 
 if __name__ == '__main__':
     # Create arg parser
@@ -18,7 +18,8 @@ if __name__ == '__main__':
 
     # Load provided YAML file and extract all groupIDs
     print("Analyzing file for new IDs..")
-    current_ids = yaml_get_all_unique_group_ids(args.file)
+    file_path = Path(args.file)
+    current_ids = yaml_get_all_unique_group_ids(file_path)
     
     # Find differences
     new_ids = sorted(set(current_ids - old_ids))

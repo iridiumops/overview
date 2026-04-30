@@ -1,5 +1,4 @@
 # import libs
-import glob
 from datetime import date, datetime
 from pathlib import Path
 from pprint import pprint
@@ -208,7 +207,7 @@ parts = {
 
 if __name__ == '__main__':
     # optional step, adds comments to part files with groupNames for GroupIDs
-    for filter_file_path in glob.glob(parts_dir + "/part*.yaml"):
+    for filter_file_path in parts_dir.glob("part*.yaml"):
         yaml_comment(Path(filter_file_path).stem)
 
     # build yaml file(s)
@@ -242,7 +241,7 @@ if __name__ == '__main__':
         date_now = date.today().strftime("%Y%m%d")
         time_now = datetime.now().strftime("%H%M%S")
         output_name = "iridium_overview_" + date_now + "-" + time_now + "_" + tab_type + ".yaml"
-        out = yaml_save_to_output(yaml_content, output_name)
-        print(" - saved to file: " + out)
+        output_path = yaml_save_to_output(yaml_content, output_name)
+        print(f" - saved to file: {output_path}")
 
     print("Done")

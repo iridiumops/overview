@@ -8,7 +8,7 @@ chcp 65001 > nul
 call activate.bat iridium_overview
 
 :: Run python script
-python src/monitor.py
+python ./../src/monitor.py
 
 if %ERRORLEVEL% EQU 0 (
     echo Success: no changes detected, exiting...

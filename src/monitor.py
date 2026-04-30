@@ -1,5 +1,5 @@
 # imports
-import glob, sys
+import sys
 from pprint import pprint
 from api import *
 from utils import *
@@ -11,7 +11,7 @@ def main():
     try:
         # Extract group IDs from provided YAML from last release
         print("\n=== Extracting group IDs from latest release YAML file ===")
-        releases = sorted(glob.glob(releases_dir + "/*_main.yaml"), key=os.path.getmtime, reverse=True)
+        releases = sorted(releases_dir.glob("*_main.yaml"), key=os.path.getmtime, reverse=True)
         if len(releases)<1:
             print("Error - could not find latest release yaml file")
             return None
@@ -129,7 +129,7 @@ def main():
 
         # Read ids that should be ignored as they dont seem to be displayable on the overview
         print("\n=== Finding which groups to skip ===")
-        ignored_file_path = parts_dir + "/ignored.yaml"
+        ignored_file_path = parts_dir / "ignored.yaml"
         print(f"Reading file: {ignored_file_path}")  
         with open(ignored_file_path, 'r', encoding="utf8") as ignored_file:
             ignored_ids = sorted(yaml.safe_load(ignored_file).keys())

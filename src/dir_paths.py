@@ -1,13 +1,15 @@
-import os
+from pathlib import Path
 
-temp_dir = "./temp"
-if not os.path.exists(temp_dir):
-    os.makedirs(temp_dir)
+root_dir = Path(__file__).resolve().parent.parent
 
-output_dir = "./output"
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
+temp_dir = root_dir / "temp"
+temp_dir.mkdir(parents=True, exist_ok=True)
 
-parts_dir = "./parts"
+output_dir = root_dir / "output"
+output_dir.mkdir(parents=True, exist_ok=True)
 
-releases_dir = "./releases"
+parts_dir = root_dir / "parts"
+parts_dir.mkdir(parents=True, exist_ok=True)
+
+releases_dir = root_dir / "releases"
+releases_dir.mkdir(parents=True, exist_ok=True)

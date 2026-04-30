@@ -5,7 +5,7 @@ conda activate iridium_overview
 
 # Run python build script
 echo "Building Iridium Overview"
-python src/build.py
+python ./../src/build.py
 
 if [ $? -eq 0 ]; then
    echo "Success"

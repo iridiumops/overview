@@ -13,7 +13,7 @@ RESET='\033[0m'
 conda activate iridium_overview
 
 # Run python script
-python src/monitor.py
+python ./../src/monitor.py
 
 status=$?
 

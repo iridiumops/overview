@@ -8,7 +8,7 @@ call activate.bat iridium_overview
 set /p "yaml_file=Enter full path to exported yaml file:"
 echo.
 :: run python analyze script with file path as argument
-python src/analyze.py "%yaml_file%"
+python ./../src/analyze.py "%yaml_file%"
 
 pause > nul
 goto :eof

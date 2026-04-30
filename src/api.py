@@ -5,7 +5,7 @@ from dir_paths import temp_dir
 
 """extremely basic interface for some eve esi rest api routes"""
 
-cache_location = temp_dir + "/cache"
+cache_location = temp_dir / "cache"
 cache_memory = Memory(cache_location, verbose=0)
 
 api_base_url = "https://esi.evetech.net"
