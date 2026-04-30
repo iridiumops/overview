@@ -12,7 +12,7 @@ api_base_url = "https://esi.evetech.net"
 api_timeout = 10
 
 
-@cache_memory.cache(cache_validation_callback=expires_after(hours=24))
+@cache_memory.cache(cache_validation_callback=expires_after(hours=23))
 def api_get_category_ids():
     """Fetch all category IDs"""
     try:
@@ -36,7 +36,7 @@ def api_get_category(category_id: int):
         return None
 
 
-@cache_memory.cache(cache_validation_callback=expires_after(hours=24))
+@cache_memory.cache(cache_validation_callback=expires_after(hours=23))
 def api_get_group_ids():
     """Fetch all group IDs, handling multi-page responses"""
     try:
