@@ -10,7 +10,7 @@ Cradle of War Expansion - EVE 24.01
 + Added new ship type: Command Carrier
 + Added new asteroids: Raspite, Polycrase, Moissanite, Kangite
 + Added new NPC type: AIR Holo-Drone Actors
-+ Added NPCs: Warpath Elite Mercenaries, Warpath Defenders, Warpath Invaders
++ Added tab for capital ships
 ```
 
 ## v3.9.0 (2026/04/30)
