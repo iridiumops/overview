@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 > nul
 
-:: Monitoring script to get notified
+:: Monitoring script to get notified of changes
 :: Use task scheduler or cron to run daily after server downtime
 
 :: Activate Anaconda ENV
@@ -14,7 +14,7 @@ if %ERRORLEVEL% EQU 0 (
     echo Success: no changes detected, exiting...
     color 20
     timeout /T 5
-    goto :eof
+    exit
 ) else (
     if %ERRORLEVEL% EQU 2 (
         echo Info: changes were detected
@@ -23,6 +23,7 @@ if %ERRORLEVEL% EQU 0 (
         echo Error: general error
         color 40
     )
+    echo Press any key to exit...
     pause > nul
-    goto :eof
+    exit /b %ERRORLEVEL%
 )

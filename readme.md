@@ -3,7 +3,7 @@
 Simple yet powerful EVE Online overview pack for everyone, every situation and all play-styles. Designed with multiple window layouts in mind, modular and easily configurable.
 
 **Features:**
-- 12 preconfigured tabs
+- up to 13 preconfigured tabs
 - 38 overview filters, see [full filter list](parts/readme.md)
 - 3 bracket filters
 - 3 dscan filters
