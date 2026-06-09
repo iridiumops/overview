@@ -2,6 +2,17 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.10.0 (2026/06/09)
+
+Cradle of War Expansion - EVE 24.01
+
+```
++ Added new ship type: Command Carrier
++ Added new asteroids: Raspite, Polycrase, Moissanite, Kangite
++ Added new NPC type: AIR Holo-Drone Actors
++ Added NPCs: Warpath Elite Mercenaries, Warpath Defenders, Warpath Invaders
+```
+
 ## v3.9.0 (2026/04/30)
 
 Capsuleer Day XXIII Warpath - EVE 23.02

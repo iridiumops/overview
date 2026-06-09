@@ -77,6 +77,26 @@ tabSetup:
         - CORPORATION
 - - 4
   - - - bracket
+      - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
+    - - color
+      - - 1.0
+        - 0.6
+        - 0.0
+    - - name
+      - '<fontsize=16> ♦ </fontsize>'
+    - - overview
+      - '<color=0xFFFF9900>❖ Ships: Enemy Capitals (red+neutral)</color>'
+    - - tabColumns
+      - - ICON
+        - DISTANCE
+        - NAME
+        - TYPE
+        - VELOCITY
+        - ANGULARVELOCITY
+        - ALLIANCE
+        - CORPORATION
+- - 5
+  - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat (-wrecks)</color>'
     - - color
       - - 1.0
@@ -93,7 +113,7 @@ tabSetup:
         - TYPE
         - VELOCITY
         - ANGULARVELOCITY
-- - 5
+- - 6
   - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
     - - color
@@ -113,7 +133,7 @@ tabSetup:
         - ANGULARVELOCITY
         - ALLIANCE
         - CORPORATION
-- - 6
+- - 7
   - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
     - - color
@@ -129,7 +149,7 @@ tabSetup:
         - DISTANCE
         - NAME
         - TYPE
-- - 7
+- - 8
   - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
     - - color
@@ -147,7 +167,7 @@ tabSetup:
         - TYPE
         - CORPORATION
         - ALLIANCE
-- - 8
+- - 9
   - - - bracket
       - _BracketFilterShowAll
     - - color
@@ -182,7 +202,7 @@ tabSetup:
         - ALLIANCE
         - VELOCITY
         - ANGULARVELOCITY
-- - 9
+- - 10
   - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
     - - color
@@ -202,7 +222,7 @@ tabSetup:
         - ANGULARVELOCITY
         - ALLIANCE
         - CORPORATION
-- - 10
+- - 11
   - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat</color>'
     - - color
@@ -222,7 +242,7 @@ tabSetup:
         - ANGULARVELOCITY
         - ALLIANCE
         - CORPORATION
-- - 11
+- - 12
   - - - bracket
       - '<color=0xFFCCCCCC>/ Brackets: Combat (+drones)</color>'
     - - color
