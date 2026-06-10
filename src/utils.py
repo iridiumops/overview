@@ -1,6 +1,9 @@
-import os, yaml, re, shutil
-from api import api_get_group
-from dir_paths import *
+import os
+import yaml
+import re
+import shutil
+import api
+import dir_paths
 
 
 def yaml_load_part(file_name):
@@ -9,7 +12,7 @@ def yaml_load_part(file_name):
 
     :param file_name: file name
     """
-    part_file_path = parts_dir / (file_name + ".yaml")
+    part_file_path = dir_paths.parts_dir / (file_name + ".yaml")
     with open(part_file_path, 'r', encoding="utf8") as part_file:
         return yaml.safe_load(part_file)
     
@@ -20,8 +23,8 @@ def yaml_comment(name):
 
     :param name: file name part
     """
-    part_file_path = parts_dir / (name + ".yaml")
-    part_file_path_temp = temp_dir / (name + ".yaml")
+    part_file_path = dir_paths.parts_dir / (name + ".yaml")
+    part_file_path_temp = dir_paths.temp_dir / (name + ".yaml")
 
     # append group names for IDs, write to temp file
     with open(part_file_path, 'r', encoding="utf8") as in_file, open(part_file_path_temp, 'w', encoding="utf8") as out_file:
@@ -32,7 +35,7 @@ def yaml_comment(name):
                 group_id = int(match_id.group(1))
 
                 # fetch group name from api
-                group = api_get_group(group_id)
+                group = api.get_group(group_id)
 
                 if group:
                     line = line.rstrip() + ' # ' + group["name"] + '\n'
@@ -67,7 +70,7 @@ def yaml_get_all_unique_group_ids(yaml_path):
 
 
 def yaml_save_to_output(yaml_content, output_name):
-    output_path = output_dir / output_name
+    output_path = dir_paths.output_dir / output_name
     try:
         with open(output_path, 'w', encoding="utf8") as outfile:
             yaml.safe_dump(yaml_content, outfile, sort_keys=False, encoding="utf8", allow_unicode=True)
@@ -79,7 +82,7 @@ def yaml_save_to_output(yaml_content, output_name):
 
 
 def yaml_save_to_temp(data, filename):
-    temp_path = temp_dir / filename
+    temp_path = dir_paths.temp_dir / filename
     try:
         with open(temp_path, 'w', encoding='utf8') as f:
             yaml.safe_dump(data, f, sort_keys=False, encoding='utf8', allow_unicode=True)

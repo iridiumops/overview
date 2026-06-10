@@ -1,22 +1,21 @@
 # First time setup
-1) Install [Git](https://git-scm.com/) and clone the repository `git clone https://github.com/iridiumops/overview.git`
-2) Install [Anaconda or Miniconda](https://www.anaconda.com/download/success). Create or update your Python environment and setup dependencies via `requirements/create.bat` script.
+1) Install [Git](https://git-scm.com/) 
+2) Clone the repository `git clone https://github.com/iridiumops/overview.git`
+3) Install [Anaconda or Miniconda](https://www.anaconda.com/download/success). 
+4) Create or update your Python environment and setup dependencies via `requirements/create.bat` script.
 
 # Workflow
 1) Find new group type IDs:
-   1) Ingame in the overview settings update or create any filter to include all possible types. For example use the `All: All` filter, tick all types and save it.
-   2) On `Misc` tab click `Export Settings`, make sure this filter is ticked and export it to a file under any name you wish. On Windows it will be located in `%USERPROFILE%\Documents\EVE\Overview\`.
-   3) Run the `scripts/analyze.bat` script and provide path to this exported YAML file, it will call `src/analyze.py` and analyze differences and fetch data from API.
-   4) Read the results, which will contain all new group type IDs and their respective names.
+   1) Read the output of `scripts/monitor.bat` script which monitors api and compares it with latest release, which will contain all new group type IDs and their respective names.
 2) Update the overview filters:
    1) Modify or update YAML files in `parts` directory to your liking with the new IDs.
    2) Optionally update the Python build script `src/build.py` if other changes are needed.
 3) Generate YAML files:
-   1) Run `scripts/build.bat` to build YAML files from parts. It will call `src/build.py` and generate new YAML files in the `output` directory, ready to be imported ingame.
-   2) Import generated YAML files into EVE Online.
-      1) Copy the newly generated YAML files from `output` directory to `%USERPROFILE%\Documents\EVE\Overview\` 
-      2) Open ingame overview settings, on the `Misc` tab click `Reset All Settings` then click `Import Settings`, select desired file from the list, tick `Check All` and click `Import` to load it.
-      3) Check that the overview changes are correct. Repeat step above with other variants of the overview.
+   1) Run `scripts/build.bat` to build YAML files. It will call `src/build.py` and generate new YAML files in the `output` directory, ready to be imported ingame and tested.
+4) Import generated YAML files into EVE Online.
+   1) Copy the newly generated YAML files from `output` directory to `%USERPROFILE%/Documents/EVE/Overview/` 
+   2) Open ingame overview settings, on the `Misc` tab click `Reset All Settings` then click `Import Settings`, select desired file from the list, tick `Check All` and click `Import` to load it.
+   3) Check that the overview changes are correct. Repeat step above with other variants of the overview.
 5) Release new version:
    1) Decide on version number (use semantic versioning).
    2) Update `changelog.md`, describe your changes.
@@ -27,7 +26,7 @@
          2) On `Misc` tab click `Export Settings`, select `General Overview Settings` and `Overview Profile` and up to 16 filters.
             1) For part 1 select filters used by the tabs by default (should be already selected).
             2) For part 2 select `Ships: Enemy...` filters.
-            3) Fort part 3 select remaining filters that you didn't select in part 1 or 2.
+            3) For part 3 select remaining filters that you didn't select in part 1 or 2.
             4) For version with Tab Icons repeat import but select icon YAML file instead, repeat selecting filters just like for part 1.
             5) For Carbon Mode version repeat import but select carbon YAML file instead, repeat selecting filters just like for part 1.
          3) Click the text left of the `Share` button at the top to rename the shareable link.
