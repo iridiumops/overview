@@ -1,34 +1,49 @@
-#imports
 import requests
 from joblib import Memory, expires_after
-from dir_paths import temp_dir
+import dir_paths
 
-"""extremely basic interface for some eve esi rest api routes"""
+"""
+basic api client for retrieving overview related info from esi api
+"""
 
-cache_location = temp_dir / "cache"
-cache_memory = Memory(cache_location, verbose=0)
-
+client_version = "1.1.0"
 api_base_url = "https://esi.evetech.net"
 api_timeout = 10
+api_headers = {
+    'User-agent' : 'overview/'+client_version+' github.com/iridiumops/overview iridiumops@gmail.com',
+    'Cache-Control' : 'no-cache',
+    'Accept-Encoding' : 'gzip',
+    'Accept' : 'application/json',
+}
+cache_location = dir_paths.temp_dir / "cache"
+cache_memory = Memory(cache_location, verbose=0)
 
 
 @cache_memory.cache(cache_validation_callback=expires_after(hours=23))
-def api_get_category_ids():
+def get_category_ids():
     """Fetch all category IDs"""
     try:
-        response = requests.get(f"{api_base_url}/universe/categories/", timeout=api_timeout)
+        response = requests.get(
+            f"{api_base_url}/universe/categories/",
+            timeout=api_timeout, 
+            headers={**api_headers, 'X-Compatibility-Date':'2026-06-09'}
+        )
         response.raise_for_status()
-        categories = response.json()
+        return response.json()
     except Exception as e:
         print(f"Error fetching categories: {e}")
-    return categories
+        return None
 
 
 @cache_memory.cache
-def api_get_category(category_id: int):
+def get_category(category_id: int):
     """Fetch category details for a given category ID."""
     try:
-        response = requests.get(f"{api_base_url}/universe/categories/{category_id}/", timeout=api_timeout)
+        response = requests.get(
+            f"{api_base_url}/universe/categories/{category_id}/",
+            timeout=api_timeout, 
+            headers={**api_headers, 'X-Compatibility-Date':'2026-06-09'}
+        )
         response.raise_for_status()
         return response.json()
     except Exception as e:
@@ -37,10 +52,14 @@ def api_get_category(category_id: int):
 
 
 @cache_memory.cache(cache_validation_callback=expires_after(hours=23))
-def api_get_group_ids():
+def get_group_ids():
     """Fetch all group IDs, handling multi-page responses"""
     try:
-        response = requests.get(f"{api_base_url}/universe/groups/", timeout=api_timeout)
+        response = requests.get(
+            f"{api_base_url}/universe/groups/",
+            timeout=api_timeout, 
+            headers={**api_headers, 'X-Compatibility-Date':'2026-06-09'}
+        )
         response.raise_for_status()
         groups = response.json()
         
@@ -48,7 +67,11 @@ def api_get_group_ids():
         total_pages = int(response.headers.get('X-Pages', 1)) # total pages, default 1
         if total_pages > 1:
             for page in range(2, total_pages + 1, 1): # loop over all remaining pages
-                response = requests.get(f"{api_base_url}/universe/groups/?page={page}", timeout=api_timeout)
+                response = requests.get(
+                    f"{api_base_url}/universe/groups/?page={page}",
+                    timeout=api_timeout, 
+                    headers={**api_headers, 'X-Compatibility-Date':'2026-06-09'}
+                )
                 response.raise_for_status()
                 groups.extend(response.json())
         
@@ -59,10 +82,14 @@ def api_get_group_ids():
 
 
 @cache_memory.cache
-def api_get_group(group_id: int):
+def get_group(group_id: int):
     """Fetch group details for a given group ID."""
     try:
-        response = requests.get(f"{api_base_url}/universe/groups/{group_id}/", timeout=api_timeout)
+        response = requests.get(
+            f"{api_base_url}/universe/groups/{group_id}/",
+            timeout=api_timeout, 
+            headers={**api_headers, 'X-Compatibility-Date':'2026-06-09'}
+        )
         response.raise_for_status()
         return response.json()
     except Exception as e:
