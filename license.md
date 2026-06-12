@@ -43,5 +43,5 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
 
-## CCP Copyright Notice
-EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners.
+## Copyright Notice
+EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of Fenris Creations ehf. (hereinafter Fenris, formerly Crowd Control Productions hf. aka CCP). All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of Fenris. EVE Online and the EVE logo are the registered trademarks of Fenris. All rights are reserved worldwide. All other trademarks are the property of their respective owners.

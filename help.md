@@ -147,7 +147,7 @@ A: Yes, NPC corporation members are correctly treated like neutrals.
 
 **Q: Can you remove NPC drones from abyss? They clutter the overview!**
 
-A: No, because they share the same group ID as other NPCs that you do need to destroy, unlike the drones. Please complain to CCP to split them logically.
+A: No, because they share the same group ID as other NPCs that you do need to destroy, unlike the drones. Please complain to Fenris to split them logically.
 
 **Q: Can you add beacons for [some specific site] to the overview?**
 
@@ -155,7 +155,7 @@ A: No, all beacons have the same group ID, I cannot distinguish between them.
 
 **Q: Can you filter upwell structures by their size?**
 
-A: No, structures are illogically grouped by their function not their size. Please complain to CCP instead.
+A: No, structures are illogically grouped by their function not their size. Please complain to Fenris instead.
 
 **Q: Can I use different overview on my other character?**
 
