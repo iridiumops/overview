@@ -2,7 +2,7 @@
 
 Instead of having one large unwieldy YAML file, Iridium Overview uses modular design. Filters are build from semantic sub-parts and then combined into various alternative versions with different settings.
 
-During the build process, part files get updated with data from SDE in form of comment labels, however all YAML comments are stripped from final YAML file as they are not supported by the game.
+During the build process, part files get updated with data from SDE in form of comment labels, however all YAML comments are stripped from final YAML file as they are not supported by the game client.
 
 ## Filter Naming
 Filters are grouped into categories based on intended use-case via common first character (symbol).
@@ -37,7 +37,6 @@ Strictly defensive Dscan filter intended to warn you about player ships and only
 Standard multipurpose dscan filter, intended both for defense (displaying potentially dangerous objects like ships, combat probes and warp disruption bubbles) and offense (enabling to quickly locate targets).
 
 ### ? DSCAN: Extra
-
 Dscan filter with expanded list of displayed objects. Intended for reconnaissance in wormholes, hunting specific targets (such as Combat Recons which themselves are immune to Dscan but secondary evidence such as wreck accumulation can be observed), etc.
 
 ### ⌘ All: All
@@ -90,7 +89,7 @@ All NPC ships and other NPC entities including turrets.
 Ships of players with positive standing, including a corporation and alliance members.
 
 ### ❖ Ships: Fleet
-Player ships that are part of your fleet regardless of standings. Useful mainly for logistics pilots who prefer it to watchlist or NPSI fleets as well.
+Player ships that are part of your fleet regardless of standings. Useful mainly for logistics pilots who prefer it to watchlist as well as for NPSI fleets.
 
 ### ❖ Ships: Enemy All (red)
 Ships belonging to players with negative standings.
@@ -105,7 +104,6 @@ Ships belonging to players with negative or neutral standings.
 Ships belonging to players with negative or neutral standings. Excludes capsules since they do not pose a threat themselves and often aren't interesting targets.
 
 ### ❖ Ships: Enemy All (war targets)
-
 Ships belonging to players that your corporation is at war with. They can be freely attacked in hisec.
 
 ### ❖ Ships: Enemy All (hisec criminals)

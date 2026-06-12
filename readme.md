@@ -1,5 +1,4 @@
 # Iridium Overview
-
 Simple yet powerful EVE Online overview pack for everyone, every situation and all play-styles. Designed with multiple window layouts in mind, modular and easily configurable.
 
 **Features:**
@@ -13,7 +12,6 @@ Simple yet powerful EVE Online overview pack for everyone, every situation and a
 ## Just try it!
 
 ### Install from ingame channel
-
 ![Install guide](assets/guides/overview-install-steps.jpg)
 
 - Join ingame channel `Iridium Overview` 
@@ -33,7 +31,6 @@ Simple yet powerful EVE Online overview pack for everyone, every situation and a
 - Close the settings window. Then log out and log back in (recommended)
 
 ## For developers
-
 - This project is open source under the MIT or BSD-3-Clause license, see [License](license.md) for details. 
 - See [Setup and Workflow](workflow.md)
 - Feel free to contribute or fork!
@@ -51,7 +48,6 @@ Feel free to send any feedback, thoughts and ideas.
 - https://iridiumops.github.io/website/
 
 ## Gallery
-
 ![Iridium Overview v3.1.0](assets/screenshots/Version-3.1-adds-new-filters-more-tabs-and-features.jpg)
 ![Iridium Overview v3.0.0](assets/screenshots/Version-3.0-for-Photon-UI-with-multi-window-support.jpg)
 ![Common Layouts](assets/screenshots/Common-multi-window-layouts-1.jpg)

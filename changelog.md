@@ -2,6 +2,18 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.10.1 (2026/06/12)
+
+Cradle of War Expansion - EVE 24.01
+
+```
+* Re-added POS Force Fields to "? DSCAN: Basic"
+* Unified column order across tabs
+* Fixed minor inconsistencies in states handling, most notably:
+  Pilots with security status below -5 will be treated the same as other suspects and criminals
+- Removed legacy states
+```
+
 ## v3.10.0 (2026/06/09)
 
 Cradle of War Expansion - EVE 24.01
