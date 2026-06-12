@@ -1,0 +1,24 @@
+# 9  # Pilot has a security status below -5
+# 10 # Pilot has a security status below 0
+- 11 # Pilot is in your fleet
+- 12 # Pilot is in your Capsuleer corporation
+# 13 # Pilot is at war with your corporation/alliance
+- 14 # Pilot is in your alliance
+- 15 # Pilot has Excellent Standing
+- 16 # Pilot has Good Standing
+# 17 # Pilot has Neutral Standing
+# 18 # Pilot has Bad Standing
+# 19 # Pilot has Terrible Standing
+- 21 # Pilot (agent) is interactable
+# 36 # Wreck is already viewed
+# 37 # Wreck is empty
+# 44 # Pilot is at war with your militia
+- 45 # Pilot is in your militia or allied to your militia
+# 48 # Pilot has No Standing
+- 49 # Pilot is an ally in one or more of your wars
+# 50 # Pilot is a suspect
+# 51 # Pilot is a criminal
+# 52 # Pilot has a limited engagement with you
+# 53 # Pilot has a killright on them that you can activate
+# 66 # Pilot is in your Non Capsuleer corporation
+# 68 # Pilot has retribution timer
