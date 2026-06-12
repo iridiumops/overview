@@ -3,6 +3,8 @@
 # Monitoring script to get notified
 # Use task scheduler or cron to run daily after server downtime
 
+SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+
 # Set readable ANSI escape color codes
 RED='\033[0;31m'
 BLUE='\033[0;36m'
@@ -13,7 +15,7 @@ RESET='\033[0m'
 conda activate iridium_overview
 
 # Run python script
-python ./../src/monitor.py
+python "${SCRIPT_DIR}/../src/monitor.py"
 
 status=$?
 
