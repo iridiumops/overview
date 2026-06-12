@@ -1,9 +1,0 @@
-- - '<color=0xFFFF9900>❖ Ships: NPCs (+turrets)</color>'
-  - - - alwaysShownStates
-      - []
-    - - filteredStates
-      - - 11
-        - 12
-        - 14
-        - 15
-        - 16
