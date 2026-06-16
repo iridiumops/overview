@@ -8,11 +8,11 @@
 1) Find new group type IDs:
    1) Read the output of `scripts/monitor.bat` script which monitors api and compares it with latest release, which will contain all new group type IDs and their respective names.
 2) Update the overview filters:
-   1) Modify or update YAML files in `parts` directory to your liking with the new IDs.
-   2) Optionally update the Python build script `src/build.py` if other changes are needed.
+   1) Modify YAML files in `parts` directory to your liking with the new IDs.
+   2) Update config script `src/config.py`.
 3) Generate YAML files:
    1) Run `scripts/build.bat` to build YAML files. It will call `src/build.py` and generate new YAML files in the `output` directory, ready to be imported ingame and tested.
-4) Import generated YAML files into EVE Online.
+4) Import generated YAML files into EVE Online and test them.
    1) Copy the newly generated YAML files from `output` directory to `%USERPROFILE%/Documents/EVE/Overview/` 
    2) Open ingame overview settings, on the `Misc` tab click `Reset All Settings` then click `Import Settings`, select desired file from the list, tick `Check All` and click `Import` to load it.
    3) Check that the overview changes are correct. Repeat step above with other variants of the overview.

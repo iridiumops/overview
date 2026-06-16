@@ -71,8 +71,7 @@ shipLabels:
   - - - bold
       - 1
     - - color
-      - &id001
-        - 1.0
+      - - 1.0
         - 1.0
         - 1.0
     - - fontsize
@@ -108,7 +107,9 @@ shipLabels:
   - - - bold
       - 1
     - - color
-      - *id001
+      - - 1.0
+        - 1.0
+        - 1.0
     - - fontsize
       - 12
     - - post

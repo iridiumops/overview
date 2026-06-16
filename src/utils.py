@@ -12,10 +12,20 @@ def yaml_load_part(file_name):
 
     :param file_name: file name
     """
+
     part_file_path = dir_paths.parts_dir / (file_name + ".yaml")
     with open(part_file_path, 'r', encoding="utf8") as part_file:
         return yaml.safe_load(part_file)
-    
+
+
+def yaml_part_exists(file_name):
+    """verify that part file exists in the parts directory, otherwise throw exception"""
+
+    file_path = dir_paths.parts_dir / (file_name + ".yaml")
+    if not file_path.is_file():
+        raise FileNotFoundError("'" + str(file_name) + "' must be valid yaml file in the parts directory")
+    return True
+
 
 def yaml_comment(name):
     """
@@ -23,6 +33,7 @@ def yaml_comment(name):
 
     :param name: file name part
     """
+    
     part_file_path = dir_paths.parts_dir / (name + ".yaml")
     part_file_path_temp = dir_paths.temp_dir / (name + ".yaml")
 

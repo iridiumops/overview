@@ -3,7 +3,7 @@ from datetime import date, datetime
 from pathlib import Path
 import utils
 import dir_paths
-from overview import config
+from config import config
 
 
 def main():

@@ -1,48 +1,54 @@
 backgroundOrder:
-- 11
-- 13
-- 52
-- 12
-- 14
-- 15
-- 16
-- 45
-- 44
-- 68
-- 9
-- 51
-- 50
-- 19
-- 18
-- 53
-- 10
-- 49
-- 17
-- 48
-- 66
-- 21
-- 20
+- 11 # Pilot is in your fleet
+- 13 # Pilot is at war with your corporation/alliance
+- 52 # Pilot has a limited engagement with you
+- 12 # Pilot is in your Capsuleer corporation
+- 14 # Pilot is in your alliance
+- 15 # Pilot has Excellent Standing
+- 16 # Pilot has Good Standing
+- 45 # Pilot is in your militia or allied to your militia
+- 44 # Pilot is at war with your militia
+- 68 # Pilot has retribution timer
+- 9  # Pilot has a security status below -5
+- 51 # Pilot is a criminal
+- 50 # Pilot is a suspect
+- 19 # Pilot has Terrible Standing
+- 18 # Pilot has Bad Standing
+- 53 # Pilot has a killright on them that you can activate
+- 10 # Pilot has a security status below 0
+- 49 # Pilot is an ally in one or more of your wars
+- 17 # Pilot has Neutral Standing
+- 48 # Pilot has No Standing
+- 66 # Pilot is in your Non Capsuleer corporation
+- 21 # Pilot (agent) is interactable
+- 20 # LEGACY (still used here for same reason?)
+# 36 # Wreck is already viewed
+# 37 # Wreck is empty
 backgroundStates:
-- 9
-- 11
-- 12
-- 13
-- 14
-- 15
-- 16
-- 17
-- 18
-- 19
-- 21
-- 44
-- 45
-- 48
-- 49
-- 50
-- 51
-- 52
-- 53
-- 68
+- 9  # Pilot has a security status below -5
+# 10 # Pilot has a security status below 0
+- 11 # Pilot is in your fleet
+- 12 # Pilot is in your Capsuleer corporation
+- 13 # Pilot is at war with your corporation/alliance
+- 14 # Pilot is in your alliance
+- 15 # Pilot has Excellent Standing
+- 16 # Pilot has Good Standing
+- 17 # Pilot has Neutral Standing
+- 18 # Pilot has Bad Standing
+- 19 # Pilot has Terrible Standing
+- 21 # Pilot (agent) is interactable
+# 36 # Wreck is already viewed
+# 37 # Wreck is empty
+- 44 # Pilot is at war with your militia
+- 45 # Pilot is in your militia or allied to your militia
+- 48 # Pilot has No Standing
+- 49 # Pilot is an ally in one or more of your wars
+- 50 # Pilot is a suspect
+- 51 # Pilot is a criminal
+- 52 # Pilot has a limited engagement with you
+- 53 # Pilot has a killright on them that you can activate
+# 66 # Pilot is in your Non Capsuleer corporation
+- 68 # Pilot has retribution timer
 columnOrder:
 - TAG
 - ICON
@@ -59,50 +65,56 @@ columnOrder:
 - TRANSVERSALVELOCITY
 - ANGULARVELOCITY
 flagOrder:
-- 11
-- 13
-- 52
-- 12
-- 14
-- 15
-- 16
-- 45
-- 44
-- 68
-- 9
-- 51
-- 50
-- 19
-- 18
-- 53
-- 10
-- 49
-- 17
-- 48
-- 66
-- 21
-- 20
+- 11 # Pilot is in your fleet
+- 13 # Pilot is at war with your corporation/alliance
+- 52 # Pilot has a limited engagement with you
+- 12 # Pilot is in your Capsuleer corporation
+- 14 # Pilot is in your alliance
+- 15 # Pilot has Excellent Standing
+- 16 # Pilot has Good Standing
+- 45 # Pilot is in your militia or allied to your militia
+- 44 # Pilot is at war with your militia
+- 68 # Pilot has retribution timer
+- 9  # Pilot has a security status below -5
+- 51 # Pilot is a criminal
+- 50 # Pilot is a suspect
+- 19 # Pilot has Terrible Standing
+- 18 # Pilot has Bad Standing
+- 53 # Pilot has a killright on them that you can activate
+- 10 # Pilot has a security status below 0
+- 49 # Pilot is an ally in one or more of your wars
+- 17 # Pilot has Neutral Standing
+- 48 # Pilot has No Standing
+- 66 # Pilot is in your Non Capsuleer corporation
+- 21 # Pilot (agent) is interactable
+- 20 # LEGACY (still used here for same reason?)
+# 36 # Wreck is already viewed
+# 37 # Wreck is empty
 flagStates:
-- 9
-- 11
-- 12
-- 13
-- 14
-- 15
-- 16
-- 17
-- 18
-- 19
-- 21
-- 44
-- 45
-- 48
-- 49
-- 50
-- 51
-- 52
-- 53
-- 68
+- 9  # Pilot has a security status below -5
+# 10 # Pilot has a security status below 0
+- 11 # Pilot is in your fleet
+- 12 # Pilot is in your Capsuleer corporation
+- 13 # Pilot is at war with your corporation/alliance
+- 14 # Pilot is in your alliance
+- 15 # Pilot has Excellent Standing
+- 16 # Pilot has Good Standing
+- 17 # Pilot has Neutral Standing
+- 18 # Pilot has Bad Standing
+- 19 # Pilot has Terrible Standing
+- 21 # Pilot (agent) is interactable
+# 36 # Wreck is already viewed
+# 37 # Wreck is empty
+- 44 # Pilot is at war with your militia
+- 45 # Pilot is in your militia or allied to your militia
+- 48 # Pilot has No Standing
+- 49 # Pilot is an ally in one or more of your wars
+- 50 # Pilot is a suspect
+- 51 # Pilot is a criminal
+- 52 # Pilot has a limited engagement with you
+- 53 # Pilot has a killright on them that you can activate
+# 66 # Pilot is in your Non Capsuleer corporation
+- 68 # Pilot has retribution timer
 overviewColumns:
 - ALLIANCE
 - ANGULARVELOCITY
