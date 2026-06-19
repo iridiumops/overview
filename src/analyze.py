@@ -28,7 +28,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # Get known old IDs
-    old_ids = set(utils.yaml_load_part("part all"))
+    old_ids = set(utils.yaml_load_part("part_all"))
 
     # Load provided YAML file and extract all groupIDs
     print("Analyzing file for new IDs..")
