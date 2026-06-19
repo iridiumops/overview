@@ -1,7 +1,7 @@
 # First time setup
 1) Install [Git](https://git-scm.com/) 
 2) Clone the repository `git clone https://github.com/iridiumops/overview.git`
-3) Install [Anaconda or Miniconda](https://www.anaconda.com/download/success). 
+3) Install [Miniforge](https://conda-forge.org/download/) or any other conda environment manager. 
 4) Create or update your Python environment and setup dependencies via `requirements/create.bat` script.
 
 # Workflow
