@@ -1,5 +1,6 @@
 from overview import Overview, Filter, Tab
 
+# rgb floats
 color_theme = {
     "white": [1.0, 1.0, 1.0],
     "blue": [0.0784, 0.6901, 0.8235],
@@ -385,7 +386,7 @@ all_filters = {
 overview_main = Overview(
     name = "iridium overview",
     variant = "main",
-    version = "3.10.1",
+    version = "3.11.0",
     general = "general",
     filters = all_filters,
     labels = "labels",
