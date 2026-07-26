@@ -32,10 +32,10 @@ def expire_at_downtime(metadata):
 
     # calculate cutoff (invalidation) time relative to current time from specific time
     now_utc = datetime.now(timezone.utc)
-    cutoff_utc = now_utc.replace(hour=11, minute=5, second=0, microsecond=0) # eve downtime time as per esi api specs
+    cutoff_utc = now_utc.replace(hour=11, minute=5, second=0, microsecond=0)  # eve downtime time as per esi api specs
     if now_utc < cutoff_utc:
         cutoff_utc = cutoff_utc - timedelta(days=1)
-        
+    
     # ensure joblib metadata timestamp is UTC based
     cached_time_utc = datetime.fromtimestamp(metadata["time"], tz=timezone.utc)
     
@@ -83,7 +83,7 @@ def get_category_ids():
     try:
         response = requests.get(
             f"{api_base_url}/universe/categories/",
-            timeout=api_timeout, 
+            timeout=api_timeout,
             headers=api_headers
         )
         response.raise_for_status()
@@ -92,13 +92,14 @@ def get_category_ids():
         handle_request_error(e, "Error fetching categories")
         return None
 
+
 @cache_memory.cache
 def get_category(category_id: int):
     """Fetch category details for a given category ID."""
     try:
         response = requests.get(
             f"{api_base_url}/universe/categories/{category_id}/",
-            timeout=api_timeout, 
+            timeout=api_timeout,
             headers=api_headers
         )
         response.raise_for_status()
@@ -114,19 +115,19 @@ def get_group_ids():
     try:
         response = requests.get(
             f"{api_base_url}/universe/groups/",
-            timeout=api_timeout, 
+            timeout=api_timeout,
             headers=api_headers
         )
         response.raise_for_status()
         groups = response.json()
         
         # handle pagination
-        total_pages = int(response.headers.get('X-Pages', 1)) # total pages, default 1
+        total_pages = int(response.headers.get('X-Pages', 1))  # total pages, default 1
         if total_pages > 1:
-            for page in range(2, total_pages + 1, 1): # loop over all remaining pages
+            for page in range(2, total_pages + 1, 1):  # loop over all remaining pages
                 response = requests.get(
                     f"{api_base_url}/universe/groups/?page={page}",
-                    timeout=api_timeout, 
+                    timeout=api_timeout,
                     headers=api_headers
                 )
                 response.raise_for_status()
@@ -144,7 +145,7 @@ def get_group(group_id: int):
     try:
         response = requests.get(
             f"{api_base_url}/universe/groups/{group_id}/",
-            timeout=api_timeout, 
+            timeout=api_timeout,
             headers=api_headers
         )
         response.raise_for_status()

@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import List, Dict
 from copy import copy, deepcopy
 import utils
 
@@ -16,7 +15,7 @@ class Filter:
         name: str, 
         always_shown_states: str, 
         filtered_states: str, 
-        parts: List[str]
+        parts: list[str]
     ):
         # validation
         utils.yaml_part_exists(always_shown_states)
@@ -36,23 +35,23 @@ class Filter:
         for part_name in parts:
             part_content = utils.yaml_load_part(part_name)
             # ensure uniqueness and consistent order
-            self.groups = sorted(list(set(self.groups + part_content)))
+            self.groups = sorted(set(self.groups + part_content))
 
 
 @dataclass
 class Tab:
-    title: str          # tab title (allows formatting), truncated ingame to 16 characters!
-    color: List[float]  # color of the tab title
-    filter: str         # full overview filter name
-    bracket: str        # full overview filter name that is used for brackets
-    columns: list       # visible columns
-    columns_order: list # column order
+    title: str           # tab title (allows formatting), truncated ingame to 16 characters!
+    color: list[float]   # color of the tab title
+    filter: str          # full overview filter name
+    bracket: str         # full overview filter name that is used for brackets
+    columns: list        # visible columns
+    columns_order: list  # column order
 
     def __init__(
         self, 
         title: str, 
-        color: List[float], 
-        filter: str, 
+        color: list[float], 
+        filter: str,  # warning: variable filter shadows inbuilt python function!
         bracket: str, 
         columns: str, 
         columns_order: str
@@ -61,10 +60,10 @@ class Tab:
         utils.yaml_part_exists(columns)
         utils.yaml_part_exists(columns_order)
         if len(color) != 3:
-            raise Exception("overview tab color must be a list with exactly 3 float values")
+            raise ValueError("overview tab color must be a list with exactly 3 float values")
         for c in color:
-            if c<0 or c>1:
-                raise Exception("overview tab color must be a float between 0 and 1")
+            if c < 0 or c > 1:
+                raise ValueError("overview tab color must be a float between 0 and 1")
         
         # init simple values
         self.title = title
@@ -79,14 +78,14 @@ class Tab:
 
 @dataclass
 class Overview:
-    name: str             # overview pack name
-    variant: str          # variant name
-    version: str          # version number
-    general: dict         # general section (mostly legacy definitions and common default settings)
-    filters: List[Filter] # Filter objects
-    labels: dict          # ship and bracket label configuration
-    states: dict          # visual representation for different states
-    tabs: List[Tab]       # Tab objects
+    name: str              # overview pack name
+    variant: str           # variant name
+    version: str           # version number
+    general: dict          # general section (mostly legacy definitions and common default settings)
+    filters: list[Filter]  # Filter objects
+    labels: dict           # ship and bracket label configuration
+    states: dict           # visual representation for different states
+    tabs: list[Tab]        # Tab objects
 
     def __init__(
         self, 
@@ -94,10 +93,10 @@ class Overview:
         variant: str, 
         version: str, 
         general: str, 
-        filters: Dict[str, Filter], 
+        filters: dict[str, Filter], 
         labels: str, 
         states: str,
-        tabs: List[Tab]
+        tabs: list[Tab]
     ):
         # validate
         utils.yaml_part_exists(general)

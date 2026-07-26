@@ -18,7 +18,7 @@ def main():
         yaml_content = overview.general
         
         # filters
-        for filter in overview.filters:
+        for filter in overview.filters:  # warning: variable filter shadows inbuilt python function!
             filter_content = [[
                 filter.name,
                 [
@@ -55,8 +55,8 @@ def main():
         # save to file
         date_now = date.today().strftime("%Y%m%d")
         time_now = datetime.now().strftime("%H%M%S")
-        output_name = overview.name + "_" + date_now + "_" + time_now + "-v" + overview.version.replace(".","") + "_" + overview.variant + ".yaml"
-        output_name = output_name.replace(" ","_")
+        output_name = overview.name + "_" + date_now + "_" + time_now + "-v" + overview.version.replace(".", "") + "_" + overview.variant + ".yaml"
+        output_name = output_name.replace(" ", "_")
         output_path = utils.yaml_save_to_output(yaml_content, output_name)
         print(f" - saved to file: {output_path}")
 

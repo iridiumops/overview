@@ -6,6 +6,7 @@ import api
 import utils
 import dir_paths
 
+
 def main():
     """
     monitors esi api for new relevant group IDs by comparing retrieved api data with the latest release;
@@ -23,7 +24,7 @@ def main():
         # Extract group IDs from provided YAML from last release
         print("\n=== Extracting group IDs from latest release YAML file ===")
         releases = sorted(dir_paths.releases_dir.glob("*_main.yaml"), key=os.path.getmtime, reverse=True)
-        if len(releases)<1:
+        if len(releases) < 1:
             print("Error - could not find latest release yaml file")
             return None
         latest_yaml_file = releases[0]
@@ -50,7 +51,7 @@ def main():
         print("Fetching from API... (please wait)")
         all_category_ids = api.get_category_ids()
         if all_category_ids is None:
-            return 1 # error
+            return 1  # error
         else:
             all_category_ids = sorted(all_category_ids)
         print(f"Found {len(all_category_ids)} categories.")
@@ -74,7 +75,7 @@ def main():
         print("Requesting data from API... (please wait)")
         all_group_ids = api.get_group_ids()
         if all_group_ids is None:
-            return 1 # error
+            return 1  # error
         else:
             all_group_ids = sorted(all_group_ids)
         print(f"Found {len(all_group_ids)} groups.")
@@ -146,7 +147,7 @@ def main():
         out = utils.yaml_save_to_temp(unique_categories, "unique_categories.yaml")
         print(f"Saved to: {out}")  
 
-        # Read ids that should be ignored as they dont seem to be displayable on the overview
+        # Read ids that should be ignored as they don't seem to be displayable on the overview
         print("\n=== Finding which groups to skip ===")
         ignored_file_path = dir_paths.parts_dir / "ignored.yaml"
         print(f"Reading file: {ignored_file_path}")  
@@ -187,14 +188,13 @@ def main():
         api.clean_cache()
     
     except:  # noqa: E722
-        return 1 # error
+        return 1  # error
 
     if len(new_relevant_group_ids) > 0 or len(removed_relevant_group_ids) > 0:
-        return 2 # changes detected
+        return 2  # changes detected
     else:
-        return 0 # no change
+        return 0  # no change
 
 
 if __name__ == '__main__':
     sys.exit(main())
-    
