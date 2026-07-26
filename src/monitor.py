@@ -184,6 +184,7 @@ def main():
         print(f"Saved to: {out}")  
     
         print("\nDone")
+        api.clean_cache()
     
     except:  # noqa: E722
         return 1 # error
