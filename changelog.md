@@ -2,12 +2,24 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.11.1 (2026/07/28)
+
+Cradle of War Expansion - EVE 24.01
+
+```
++ Added new NPC type: Fabricator Rogue Drone Dreadnought
+```
+
 ## v3.11.0 (2026/07/23)
 
 Cradle of War Expansion - EVE 24.01
 
 ```
-+ Added new NPC type: Fabricator Rogue Drones
++ Added new NPC types: 
+  Fabricator Rogue Drone Destroyer
+  Fabricator Rogue Drone Cruiser
+  Fabricator Rogue Drone Battlecruiser
+  Fabricator Rogue Drone Battleship
 ```
 
 ## v3.10.1 (2026/06/12)
