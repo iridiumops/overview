@@ -1,10 +1,19 @@
 # imports
 import sys
-import os
+import re
 import yaml
 import api
 import utils
 import dir_paths
+
+
+def filename_date(filename):
+    """
+    Extracts separated 8 digit substring from filename
+    Example filename_date('iridium_overview_20260728-v3111_main.yaml') = 20260728
+    """
+    match = re.search(r'.+[\._-]{1}(\d{8})[\._-]{1}.+', str(filename))
+    return match.group(1) if match else '00000000'
 
 
 def main():
@@ -23,10 +32,10 @@ def main():
     try:
         # Extract group IDs from provided YAML from last release
         print("\n=== Extracting group IDs from latest release YAML file ===")
-        releases = sorted(dir_paths.releases_dir.glob("*_main.yaml"), key=os.path.getmtime, reverse=True)
+        releases = sorted(dir_paths.releases_dir.glob("*_main.yaml"), key=lambda f: filename_date(f.name), reverse=True)
         if len(releases) < 1:
             print("Error - could not find latest release yaml file")
-            return None
+            return 1  # error
         latest_yaml_file = releases[0]
         print(f"Reading file {latest_yaml_file} ...")
         current_group_ids = sorted(utils.yaml_get_all_unique_group_ids(latest_yaml_file))
