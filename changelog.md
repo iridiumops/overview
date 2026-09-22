@@ -2,6 +2,13 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.12.0 (2026/09/22)
+Cradle of War Major Update - EVE 24.01
+
+```
++ Added drone type: Hybrid Drone (which were previously categorized together with combat drones)
+```
+
 ## v3.11.1 (2026/07/28)
 
 Cradle of War Expansion - EVE 24.01
