@@ -2,6 +2,18 @@
 
 All notable changes to Iridium Overview will be documented in this file.
 
+## v3.13.0 (2026/11/10)
+The Fractured Skies - EVE 24.02
+
+```
++ Added new NPC types: 
+  FW Vanguard Hauler
+  FW Shuttles, Dreadnoughts, Titans, Generals (carriers)
++ FW Conquest Engine
++ FW Rally Point Beacon
++ FW Item Trader
+```
+
 ## v3.12.0 (2026/09/22)
 Cradle of War Major Update - EVE 24.01
 
@@ -184,7 +196,7 @@ Feel free to check out Iridium Overview on updated IridiumOps website: https://i
 
 ## v3.2.0 (2023/06/14)
 
-Viridian Expansion 
+Viridian Expansion
 
 ```
 + Added new asteroid type
@@ -256,7 +268,7 @@ Update for legacy v2 Carbon UI branch.
 
 Uprising - EVE 20.10
 
-New Major version. 
+New Major version.
 
 Note: Version 3 branch will be maintained alongside v2.9 for a while.
 
@@ -264,7 +276,7 @@ The biggest change is splitting system navigation (gates, beacons, stations etc.
 
 For now, I am not making a version with compact tab icons, since I don't know if anyone really uses it and it was confusing some new players.
 
-Sadly multiple windows and per tab column settings is where improvements on CCP side of things end, at least for now. Asteroid brackets, moon brackets and colour preset names are still not fully supported. Nor anything else community suggested. But I take it. 
+Sadly multiple windows and per tab column settings is where improvements on CCP side of things end, at least for now. Asteroid brackets, moon brackets and color preset names are still not fully supported. Nor anything else community suggested. But I take it.
 
 ```
 * Update to be compatible with Photon UI 
@@ -360,7 +372,7 @@ Quadrant 1 - Reign - February Release - EVE 19.01
 Invasion Chapter 3 - July Release
 
 ```
-+ Added destructable effect beacon
++ Added destructible effect beacon
 + Added Temporary Collidable Structure
 ```
 
@@ -370,16 +382,16 @@ Invasion Chapter 3 - June Release - EVE 18.06
 
 ```
 + Added Temporary Collidable Structures
-* Destructable Effect Beacons added also to PVP presets
+* Destructible Effect Beacons added also to PVP presets
 * Various tiny changes thanks to your feedback
 ```
 
 ## v2.8.0 (2020/05/27)
 
-Invasion Chapter 3 - May Release - EVE 18.05 
+Invasion Chapter 3 - May Release - EVE 18.05
 
 ```
-+ Added exotic artefacts
++ Added exotic artifacts
 + Added invisible beacons
 + Added irregular capsules
 - Charges removed from ship only presets (still visible in space and on all main presets)
@@ -399,7 +411,7 @@ Invasion Chapter 3 - May Release - EVE 18.05
 ## v2.7.1 (2019/12/10)
 
 ```
-* Verious additional fixes
+* Various additional fixes
 ```
 
 ## v2.7.0 (2019/12/10)
@@ -445,7 +457,7 @@ Invasion Expansion - Invasion 1.0
 
 ```
 + Added Invading Precursor Entities
-+ Added new asteorid types: Bezdnacine, Rakovene, Talassonite
++ Added new asteroid types: Bezdnacine, Rakovene, Talassonite
 * Various tiny changes thanks to your feedback
 ```
 
@@ -456,7 +468,7 @@ Onslaught Expansion - April Release
 ```
 + Added Fluorite Asteroids
 - Removed probes and bombs from Enemy Ships presets
-- Drone backet preset merged with PVP (+drones) brackets preset
+- Drone bracket preset merged with PVP (+drones) brackets preset
 - Various tiny changes thanks to your feedback
 ```
 
