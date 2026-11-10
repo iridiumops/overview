@@ -1,6 +1,6 @@
 import requests
-from datetime import datetime, timezone, timedelta
-from joblib import Memory, expires_after
+from datetime import datetime, timedelta, UTC
+from joblib import Memory
 import dir_paths
 
 """
@@ -23,7 +23,7 @@ cache_location.mkdir(parents=True, exist_ok=True)
 cache_memory = Memory(cache_location, verbose=0)
 logs_location = dir_paths.temp_dir / "logs"
 logs_location.mkdir(parents=True, exist_ok=True)
-timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')  # noqa: DTZ005
+timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 error_log_file = logs_location / f"error_{timestamp}.log"
 
 
@@ -31,13 +31,13 @@ def expire_at_downtime(metadata):
     """Better alternative to expires_after(hours=23, minutes=59) for daily data"""
 
     # calculate cutoff (invalidation) time relative to current time from specific time
-    now_utc = datetime.now(timezone.utc)
+    now_utc = datetime.now(UTC)
     cutoff_utc = now_utc.replace(hour=11, minute=5, second=0, microsecond=0)  # eve downtime time as per esi api specs
     if now_utc < cutoff_utc:
         cutoff_utc = cutoff_utc - timedelta(days=1)
     
     # ensure joblib metadata timestamp is UTC based
-    cached_time_utc = datetime.fromtimestamp(metadata["time"], tz=timezone.utc)
+    cached_time_utc = datetime.fromtimestamp(metadata["time"], tz=UTC)
     
     # compare time (true means valid cache)
     return cached_time_utc > cutoff_utc

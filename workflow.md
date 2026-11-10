@@ -1,10 +1,14 @@
-# First time setup
-1) Install [Git](https://git-scm.com/) 
+# Dev workflow
+
+## First time dev setup
+
+1) Install [Git](https://git-scm.com/)
 2) Clone the repository `git clone https://github.com/iridiumops/overview.git`
-3) Install [Miniforge](https://conda-forge.org/download/) or any other conda environment manager. 
+3) Install [Miniforge](https://conda-forge.org/download/) or any other conda environment manager.
 4) Create or update your Python environment and setup dependencies via `requirements/create.bat` script.
 
-# Workflow
+## Dev updates
+
 1) Find new group type IDs:
    1) Read the output of `scripts/monitor.bat` script which monitors api and compares it with latest release, which will contain all new group type IDs and their respective names.
 2) Update the overview filters:
@@ -13,7 +17,7 @@
 3) Generate YAML files:
    1) Run `scripts/build.bat` to build YAML files. It will call `src/build.py` and generate new YAML files in the `output` directory, ready to be imported ingame and tested.
 4) Import generated YAML files into EVE Online and test them.
-   1) Copy the newly generated YAML files from `output` directory to `%USERPROFILE%/Documents/EVE/Overview/` 
+   1) Copy the newly generated YAML files from `output` directory to `%USERPROFILE%/Documents/EVE/Overview/`
    2) Open ingame overview settings, on the `Misc` tab click `Reset All Settings` then click `Import Settings`, select desired file from the list, tick `Check All` and click `Import` to load it.
    3) Check that the overview changes are correct. Repeat step above with other variants of the overview.
 5) Release new version:
@@ -30,7 +34,7 @@
             4) For version with Tab Icons repeat import but select icon YAML file instead, repeat selecting filters just like for part 1.
             5) For Carbon Mode version repeat import but select carbon YAML file instead, repeat selecting filters just like for part 1.
          3) Click the text left of the `Share` button at the top to rename the shareable link.
-         4) Drag the `Share` button to ingame notepad to create shareable link. 
+         4) Drag the `Share` button to ingame notepad to create shareable link.
          5) Repeat previous steps for all variants.
          6) Select the links in the ingame notepad, right click and use `Copy Selected With Formatting`. Paste the links in a text editor to see the actual link URI for each link, it will look like `overviewPreset:e68.....675//1`.
       2) Open `motd/motd.html` in a text editor. Update information and replace old links with new ones from the step above. Make sure it it less than 4000 bytes so it fits in the ingame MOTD. Note: html formatting used by the game is simplified and non-standard.

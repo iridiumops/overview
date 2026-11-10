@@ -41,11 +41,12 @@ A: dscan, d-scan or directional scanner is a tool that allows you to get some li
 
 **Q: What does standing mean in this context?**
 
-A: Standing refers to your relationship with other players or corporations, ranging from -10 (hostile, red) to +10 (friendly, green and blue). Iridium Overview uses standings to categorize objects and color-code them. For example on most tabs you don't want to see friendly ships while you want hostile players to unmistakably pop out among noise. 
+A: Standing refers to your relationship with other players or corporations, ranging from -10 (hostile, red) to +10 (friendly, green and blue). Iridium Overview uses standings to categorize objects and color-code them. For example on most tabs you don't want to see friendly ships while you want hostile players to unmistakably pop out among noise.
 
 **Q: What standings and states are there?**
 
 A: iridium overview uses the following terms:
+
 - All: Any standings, any special state
 - Red: Negative standing (-5, -10)
 - Neutral: Neutral standing or no standings

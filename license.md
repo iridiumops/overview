@@ -1,10 +1,13 @@
 # Licenses and Copyright
+
 SPDX-License-Identifier: MIT OR BSD-3-Clause
 
 ## Iridium Overview (v2.1.0 and newer versions)
+
 Unless specified otherwise, this software and all associated files are available under any of the licenses below:
 
 ### MIT License
+
 Copyright © 2013-2026, IridiumOps <iridiumops@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -41,7 +44,8 @@ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## Copyright Notice
+
 EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of Fenris Creations ehf. (hereinafter Fenris, formerly Crowd Control Productions hf. aka CCP). All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of Fenris. EVE Online and the EVE logo are the registered trademarks of Fenris. All rights are reserved worldwide. All other trademarks are the property of their respective owners.
